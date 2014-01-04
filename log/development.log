@@ -249,3 +249,2330 @@ ActionController::RoutingError (uninitialized constant PostsController):
   Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
   Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (98.4ms)
   Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (216.9ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:10:37 -0200
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ProductsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (63.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:11:45 -0200
+Processing by ProductsController#new as HTML
+Completed 500 Internal Server Error in 68ms
+
+ActionView::MissingTemplate (Missing template products/new, application/new with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/camila/workspace/toxstock/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1002545158__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:15:17 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 458ms (Views: 455.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:15:17 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:15:17 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:15:17 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:17 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:17 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:17 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:18 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:18 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:18 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:15:29 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:15:30 -0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 16:16:16 -0200
+
+AbstractController::ActionNotFound (The action 'index' could not be found for ProductsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:21 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:16:56 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (184.3ms)
+Completed 200 OK in 205ms (Views: 203.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:19:36 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:22:23 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:23:32 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:23:49 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 41ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:23:49 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:23:49 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:24:04 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:24:04 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:04 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:24:21 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:22 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:24:51 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:25:05 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:28:59 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:28:59 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:28:59 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:29:00 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:00 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:00 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:00 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:00 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:00 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:00 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:29:06 -0200
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ProductsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.1ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:29:22 -0200
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ProductsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (3.9ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:29:30 -0200
+
+
+Started POST "/products/new" for 127.0.0.1 at 2014-01-04 16:29:33 -0200
+
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.4ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (127.1ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (218.6ms)
+
+
+Started POST "/products/new" for 127.0.0.1 at 2014-01-04 16:29:38 -0200
+
+ActionController::RoutingError (No route matches [POST] "/products/new"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (85.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:31:11 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 52ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:31:12 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:31:23 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:33:54 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:33:54 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:33:54 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:33:54 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:33:54 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:33:54 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:33:55 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:33:55 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:33:55 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:33:55 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:34:18 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:34:19 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:34:23 -0200
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ProductsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:35:07 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:35:08 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:35:24 -0200
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ProductsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:40:02 -0200
+
+Errno::ENOENT (No such file or directory - /home/camila/workspace/toxstock/../config/logins.yml):
+  app/controllers/application_controller.rb:11:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:3:in `<top (required)>'
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (122.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:40:21 -0200
+
+Errno::ENOENT (No such file or directory - /home/camila/workspace/toxstock/../config/logins.yml):
+  app/controllers/application_controller.rb:11:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:3:in `<top (required)>'
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:41:25 -0200
+
+Errno::ENOENT (No such file or directory - /home/camila/workspace/toxstock/../../config/logins.yml):
+  app/controllers/application_controller.rb:11:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:3:in `<top (required)>'
+  app/controllers/welcome_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.7ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:41:46 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:41:51 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 47ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:42:07 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:42:11 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:42:48 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:43:14 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:15 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:43:34 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:34 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:34 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:35 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:35 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:35 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:35 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:35 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:35 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:35 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:43:52 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 16:44:33 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:46:31 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:46:40 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"toxicoo", "text"=>"5"}, "commit"=>"Save Product"}
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template products/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/camila/workspace/toxstock/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1002545158__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  rack (1.5.2) lib/rack/auth/basic.rb:25:in `call'
+  rack (1.5.2) lib/rack/auth/basic.rb:25:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__52858012__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:47:49 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"teste1", "text"=>"1"}, "commit"=>"Save Product"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 155ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:48:18 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"teste1", "text"=>"1"}, "commit"=>"Save Product"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:48:28 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"teste1", "text"=>"1"}, "commit"=>"Save Product"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 45ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 16:48:30 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:48:46 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"Teste", "quantity"=>"1"}, "commit"=>"Save Product"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 16:48:52 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"Teste1", "quantity"=>"1"}, "commit"=>"Save Product"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (142.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (112.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20140104185910)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "quantity" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (22.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140104185910"]]
+  [1m[36m (151.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:04:43 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (183.6ms)
+Completed 200 OK in 588ms (Views: 507.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:04:46 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:04:46 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:04:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:04:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:04:47 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:04:47 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:04:47 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:04:47 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:04:47 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 17:04:55 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"Teste", "quantity"=>"1"}, "commit"=>"Save Product"}
+Completed 500 Internal Server Error in 28ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/products_controller.rb:6:in `create'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.7ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (66.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:07:58 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 17:08:09 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"Teste", "quantity"=>"1"}, "commit"=>"Save Product"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (47.3ms)[0m  [1mINSERT INTO "products" ("created_at", "name", "quantity", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 04 Jan 2014 19:08:10 UTC +00:00], ["name", "Teste"], ["quantity", 1], ["updated_at", Sat, 04 Jan 2014 19:08:10 UTC +00:00]]
+  [1m[35m (158.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 313ms (ActiveRecord: 206.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2014-01-04 17:08:10 -0200
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  rack (1.5.2) lib/rack/auth/basic.rb:25:in `call'
+  rack (1.5.2) lib/rack/auth/basic.rb:25:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__24275930__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/camila/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:14:06 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 147ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:06 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:07 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 17:14:13 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"Teste", "quantity"=>"1"}, "commit"=>"Save Product"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO "products" ("created_at", "name", "quantity", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 04 Jan 2014 19:14:13 UTC +00:00], ["name", "Teste"], ["quantity", 1], ["updated_at", Sat, 04 Jan 2014 19:14:13 UTC +00:00]]
+  [1m[36m (149.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 238ms (ActiveRecord: 155.2ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2014-01-04 17:14:13 -0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 29.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:13 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:13 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:14 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:14 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:14 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:14 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:14 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:14 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:14 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 17:14:38 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 45ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:14:53 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 17:15:06 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:15:07 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:14 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 17:16:31 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zg6KlisUvY2gxFLloFZU8nCUWS0mIDrK7drDiXpgf6g=", "product"=>{"name"=>"ácido acético", "quantity"=>"5"}, "commit"=>"Save Product"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "products" ("created_at", "name", "quantity", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 04 Jan 2014 19:16:31 UTC +00:00], ["name", "ácido acético"], ["quantity", 5], ["updated_at", Sat, 04 Jan 2014 19:16:31 UTC +00:00]]
+  [1m[36m (206.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 224ms (ActiveRecord: 207.9ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2014-01-04 17:16:31 -0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 21.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:31 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:31 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:32 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:32 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:32 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:32 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:32 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:32 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:32 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:16:51 -0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:22:15 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:22:15 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:22:15 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:22:16 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:22:16 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:22:16 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:22:16 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:22:16 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:22:16 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:22:16 -0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:22:18 -0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Quantity</th>
+     7:   </tr>
+     8:  
+     9:   <% @products.each do |product| %>
+    10:     <tr>
+    11:       <td><%= product.name %></td>
+    12:       <td><%= product.quantity %></td>
+  app/views/products/index.html.erb:9:in `_app_views_products_index_html_erb___1068216547_82062060'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.9ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (50.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:23:26 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:27 -0200
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"Teste", "quantity"=>"1"}, "commit"=>"Save Product"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "products" ("created_at", "name", "quantity", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 04 Jan 2014 19:23:35 UTC +00:00], ["name", "Teste"], ["quantity", 1], ["updated_at", Sat, 04 Jan 2014 19:23:35 UTC +00:00]]
+  [1m[36m (151.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 221ms (ActiveRecord: 153.5ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduct Load (2.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 29.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:23:35 -0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:23:39 -0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>Quantity</th>
+     7:   </tr>
+     8:  
+     9:   <% @products.each do |product| %>
+    10:     <tr>
+    11:       <td><%= product.name %></td>
+    12:       <td><%= product.quantity %></td>
+  app/views/products/index.html.erb:9:in `_app_views_products_index_html_erb___1068216547__631930508'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.2ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 70ms (Views: 52.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:24:32 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:27 -0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:29:30 -0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:29:33 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-01-04 17:29:43 -0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rxDdJZ80uozFey1aftwr6EOL/ih5/HOt+RPelf7yo0s=", "product"=>{"name"=>"Teste2", "quantity"=>"10"}, "commit"=>"Save Product"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (11.0ms)[0m  INSERT INTO "products" ("created_at", "name", "quantity", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 04 Jan 2014 19:29:43 UTC +00:00], ["name", "Teste2"], ["quantity", 10], ["updated_at", Sat, 04 Jan 2014 19:29:43 UTC +00:00]]
+  [1m[36m (178.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 211ms (ActiveRecord: 189.3ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered products/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 34ms (Views: 24.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:29:44 -0200
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:29:48 -0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:30:47 -0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (66.3ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (undefined local variable or method `index' for #<#<Class:0xb496765c>:0xb60a4130>):
+    15: </table>
+    16: <br>
+    17: <%= link_to 'Add new product', new_product_path %>
+    18: <%= link_to 'Home', index %>
+  app/views/products/index.html.erb:18:in `_app_views_products_index_html_erb___1068216547__620422298'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.8ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:32:02 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (185.1ms)
+Completed 500 Internal Server Error in 400ms
+
+ActionView::Template::Error (undefined local variable or method `welcome_index' for #<#<Class:0x9743958>:0x9742b5c>):
+    15: </table>
+    16: <br>
+    17: <%= link_to 'Add new product', new_product_path %>
+    18: <%= link_to 'Home', welcome_index %>
+  app/views/products/index.html.erb:18:in `_app_views_products_index_html_erb___876114407_73921140'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:32:53 -0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (60.8ms)
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (undefined local variable or method `welcome' for #<#<Class:0x9743958>:0xb55b3d70>):
+    15: </table>
+    16: <br>
+    17: <%= link_to 'Add new product', new_product_path %>
+    18: <%= link_to 'Home', controller: welcome %>
+  app/views/products/index.html.erb:18:in `_app_views_products_index_html_erb___876114407__626158488'
+
+
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /home/camila/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:33:20 -0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 301ms (Views: 297.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-04 17:33:21 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 17:33:24 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:33:45 -0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 17:33:47 -0200
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:33:49 -0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (1.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-01-04 17:33:50 -0200
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (96.5ms)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-01-04 17:33:52 -0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.5ms)
