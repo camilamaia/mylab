@@ -36,6 +36,9 @@ gem 'therubyracer'
 # Binary distribution of the V8 JavaScript engines
 gem 'libv8', '~> 3.16.14.3'
 
+# Postgres
+gem 'pg'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
