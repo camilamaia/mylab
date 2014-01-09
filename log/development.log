@@ -4403,3 +4403,13 @@ Processing by ProductsController#index as HTML
   [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
   Rendered products/index.html.erb within layouts/application (4.7ms)
 Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 1.1ms)
+  [1m[36m (139.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (61.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20140104185910)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (49.0ms)[0m  [1mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "quantity" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140104185910"]]
+  [1m[36m (17.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
