@@ -1,5 +1,5 @@
 Toxstock::Application.routes.draw do
-  resources :products
+  resources :materials
  
   # get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.

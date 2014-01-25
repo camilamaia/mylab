@@ -1,0 +1,22 @@
+<p>
+  <strong>Número de Indentificação:</strong>
+  <%= @material.id %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @material.name %>
+</p>
+ 
+<p>
+  <strong>Fórmula:</strong>
+  <%= @material.formula %>
+</p>
+
+<p>
+  <strong>Permante:</strong>
+  <%= @material.durable %>
+</p>
+
+<%= link_to 'Voltar', materials_path %>
+| <%= link_to 'Editar', edit_material_path(@material) %>

@@ -1,0 +1,35 @@
+<h1>Lista de Materiais</h1>
+ 
+<table>
+  <tr>
+    <th>Número de Indentificação</th>
+    <th>Nome</th>
+    <th>Fórmula</th>
+    <th>Tipo</th>
+  </tr>
+ 
+  <% @materials.each do |material| %>
+    <tr>
+      <td><%= material.id %></td>
+      <td><%= material.name %></td>
+      <td><%= material.formula %></td>
+
+      <% if material.durable %>
+        <td>Permanente</td>
+      <% else %>
+        <td>Custeio</td>
+      <% end %> 
+
+      <td><%= link_to 'Mostrar', material %></td>
+      <td><%= link_to 'Editar', edit_material_path(material) %></td>
+      <td><%= link_to 'Remover', material_path(material),
+                    method: :delete, data: {
+                      confirm: 'Você tem certeza que deseja remover o material \'' +
+                      material.name + '\'?' 
+                    } %></td>
+    </tr>
+  <% end %>
+</table>
+<br>
+<%= link_to 'Adicionar novo material', new_material_path %> <br>
+<%= link_to 'Início', controller: "welcome" %>

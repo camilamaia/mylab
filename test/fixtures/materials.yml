@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  quantity: 1
+  formula: MyString
 
 two:
   name: MyString
-  quantity: 1
+  formula: MyString
