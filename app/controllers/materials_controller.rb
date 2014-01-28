@@ -13,7 +13,7 @@ class MaterialsController < ApplicationController
 
   def create
     @material = Material.new(material_params)
- 
+
     if @material.save
       redirect_to @material
     else
@@ -27,8 +27,8 @@ class MaterialsController < ApplicationController
 
   def update
     @material = Material.find(params[:id])
-   
-    if @material.update(params[:material].permit(:name, :formula))
+
+    if @material.update(params[:material].permit(:name, :formula, :kind))
       redirect_to @material
     else
       render 'edit'
@@ -38,13 +38,13 @@ class MaterialsController < ApplicationController
   def destroy
     @material = Material.find(params[:id])
     @material.destroy
-   
+
     redirect_to materials_path
   end
- 
+
   private
-  
+
     def material_params
-      params.require(:material).permit(:name, :formula)
+      params.require(:material).permit(:name, :formula, :kind)
     end
 end
