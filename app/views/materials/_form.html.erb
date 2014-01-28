@@ -1,33 +1,6 @@
-<%= form_for @material do |f| %>
-  <% if @material.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@material.errors.count, "erro") %> impediu que
-        este material seja salvo:</h2>
-      <ul>
-      <% @material.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  
-  <p>
-    <%= f.label :nome %><br>
-    <%= f.text_field :name %>
-  </p>
- 
-  <p>
-    <%= f.label :fórmula %><br>
-    <%= f.text_field :formula %>
-  </p>
-
-  <p>
-    <%= f.radio_button(:durable, false) %> Custeio
-    <%= f.radio_button(:durable, true) %> Permanente
-  </p>
-
-  <p>
-    <%= f.submit :'Salvar Material' %>
-  </p>
+<%= simple_form_for @material do |f| %>
+  <%= f.input :name, label: 'Nome' %> <br>
+  <%= f.input :formula, label: 'Fórmula' %> <br>
+  <%= f.input :kind, label: false, :selected => 1 %> <br>
+  <%= f.submit 'Salvar Material' %>
 <% end %>
-

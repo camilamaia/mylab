@@ -13,12 +13,7 @@
       <td><%= material.id %></td>
       <td><%= material.name %></td>
       <td><%= material.formula %></td>
-
-      <% if material.durable %>
-        <td>Permanente</td>
-      <% else %>
-        <td>Custeio</td>
-      <% end %> 
+      <td><%= material.kind %></td>
 
       <td><%= link_to 'Mostrar', material %></td>
       <td><%= link_to 'Editar', edit_material_path(material) %></td>

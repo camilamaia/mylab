@@ -39,6 +39,18 @@ gem 'libv8', '~> 3.16.14.3'
 # Postgres
 gem 'pg'
 
+gem 'activesupport', '~> 4.0.2'
+
+gem 'minitest', '~> 4.7.5'
+
+gem 'json', '~> 1.8.1'
+
+# github.com/plataformatec/simple_form
+gem 'simple_form', '~> 3.0.1'
+
+# github.com/brainspec/enumerize
+gem 'enumerize', '~> 0.7.0'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
