@@ -1,4 +1,22 @@
 pt-BR:
+  editing_material: Editar Material
+  new_material: Novo Material
+  back: Voltar
+  edit: Editar
+  identification_number: Número de Identificação
+
+  simple_form:
+    labels:
+      material:
+        name: Nome
+        formula: Fórmula
+
+  enumerize:
+    material:
+      kind:
+        durable: Permanente
+        not_durable: Custeio
+
   date:
     abbr_day_names:
     - Dom

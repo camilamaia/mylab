@@ -1,0 +1,19 @@
+p
+  strong #{t(:identification_number)}:
+  = @material.id
+
+p
+  strong Nome:
+  = @material.name
+
+p
+  strong Fórmula:
+  = @material.formula
+
+p
+  strong Tipo:
+  = @material.kind
+
+= link_to t(:back), materials_path
+
+= link_to t(:edit), edit_material_path(@material)

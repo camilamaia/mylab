@@ -1,7 +1,8 @@
-en:
+pt-BR:
   simple_form:
-    "yes": 'Yes'
-    "no": 'No'
+    label:
+      "name": 'Nome'
+      "no": 'No'
     required:
       text: 'required'
       mark: '*'
