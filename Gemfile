@@ -19,10 +19,7 @@ gem 'turbolinks'
 gem 'execjs', '~> 2.0.2'
 
 # Embed the V8 Javascript Interpreter into Ruby
-gem 'therubyracer', '~> 0.12.0'
-
-# Binary distribution of the V8 JavaScript engines
-gem 'libv8', '~> 3.16.14.3'
+gem 'therubyracer', '~> 0.12.1', platforms: :ruby
 
 # Postgres
 gem 'pg', '~> 0.17.1'
