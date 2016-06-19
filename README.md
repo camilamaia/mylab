@@ -1,4 +1,4 @@
-toxstock
+TOXStock
 ========
 
 Aplicação Web para Controle de Estoques do Laboratório de Toxicologia da Universidade Federal de Santa Catarina
