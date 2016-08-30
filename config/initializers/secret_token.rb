@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Toxstock::Application.config.secret_key_base = 'c003142e1bfe0eaf73a7c33223c21d71bfd459dfff1bf1b62e0da38ca78099c2e7bb1d57f213e72c255aec14016b0e1bc17465b7e22ece86a6b4d52e4ccd85c5'
+Mylab::Application.config.secret_key_base = 'c003142e1bfe0eaf73a7c33223c21d71bfd459dfff1bf1b62e0da38ca78099c2e7bb1d57f213e72c255aec14016b0e1bc17465b7e22ece86a6b4d52e4ccd85c5'

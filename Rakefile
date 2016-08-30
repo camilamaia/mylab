@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Toxstock::Application.load_tasks
+Mylab::Application.load_tasks

@@ -1,4 +1,4 @@
-Toxstock::Application.routes.draw do
+Mylab::Application.routes.draw do
   resources :materials
  
   # get "welcome/index"

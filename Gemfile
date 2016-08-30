@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.6'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.6'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -36,6 +36,9 @@ gem 'slim-rails', '~> 2.1.0'
 # github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '~> 2.3.2.2'
 
+# https://github.com/morshedalam/rename
+gem 'rename', '~> 1.0.2'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -43,7 +46,7 @@ end
 
 group :development do
   # github.com/charliesome/better_errors
-  gem 'better_errors'
+  gem 'better_errors', '~> 2.1.1'
 
   # github.com/banister/binding_of_caller
   gem 'binding_of_caller'

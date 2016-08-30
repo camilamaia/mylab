@@ -17,11 +17,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: toxstock_development
+  database: mylab_development
   host: localhost
   pool: 5
-  username: toxstock
-  password: tox
+  username: mylab
+  password: lab
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -47,17 +47,17 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: toxstock_test
+  database: mylab_test
   host: localhost
   pool: 5
-  username: toxstock
-  password: tox
+  username: mylab
+  password: lab
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: toxstock_production
+  database: mylab_production
   host: localhost
   pool: 5
-  username: toxstock
-  password: tox
+  username: mylab
+  password: lab
