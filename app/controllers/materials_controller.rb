@@ -44,7 +44,7 @@ class MaterialsController < ApplicationController
 
   private
 
-    def material_params
-      params.require(:material).permit(:name, :formula, :kind)
-    end
+  def material_params
+    params.require(:material).permit(:name, :formula, :kind)
+  end
 end

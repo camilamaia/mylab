@@ -1,0 +1,30 @@
+= link_to "Sign out", destroy_user_session_path, :method => :delete
+
+h1
+  | Bem-vindo ao MyLab, #{current_user.email}
+
+h1 Estoques
+table
+  tr
+    th Nome
+    th Descrição
+    th Responsável
+  - @stocks.each do |stock|
+    tr
+      td= stock.name
+      td= stock.description
+      td= stock.responsible.name
+      td= link_to 'Editar', edit_stock_path(stock)
+      td= link_to 'Remover', stock_path(stock),                           \
+          method: :delete, data: {                                        \
+            confirm: 'Você tem certeza que deseja remover o estoque \'' + \
+            stock.name + '\'?'                                            \
+          }                                                               \
+
+
+= link_to 'Adicionar novo stock', new_material_path
+br/
+
+
+= link_to "Criar estoque", controller: "stocks"
+
