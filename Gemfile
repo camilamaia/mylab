@@ -42,7 +42,11 @@ gem 'rename', '~> 1.0.2'
 # https://github.com/plataformatec/devise
 gem 'devise', '~> 3.5.10'
 
+# https://github.com/michaeldv/awesome_print
 gem 'awesome_print', '~> 1.7.0'
+
+# https://github.com/bokmann/font-awesome-rails
+gem "font-awesome-rails", '~> 4.6.3.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -56,6 +60,7 @@ group :development do
   # github.com/banister/binding_of_caller
   gem 'binding_of_caller'
 
+  # https://github.com/rweng/pry-rails
   gem 'pry-rails', '~> 0.3.4'
 end
 
