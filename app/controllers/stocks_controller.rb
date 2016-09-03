@@ -15,7 +15,7 @@ class StocksController < ApplicationController
     @stock = Stock.new(stock_params)
 
     if @stock.save
-      redirect_to @stock
+      redirect_to home_path
     else
       render 'new'
     end
@@ -28,8 +28,8 @@ class StocksController < ApplicationController
   def update
     @stock = Stock.find(params[:id])
 
-    if @stock.update(params[:stock].permit(:name, :description, :responsible))
-      redirect_to @stock
+    if @stock.update(params[:stock].permit(:name, :description, :user_id))
+      redirect_to home_path
     else
       render 'edit'
     end
@@ -39,12 +39,12 @@ class StocksController < ApplicationController
     @stock = Stock.find(params[:id])
     @stock.destroy
 
-    redirect_to stocks_path
+    redirect_to home_path
   end
 
   private
 
   def stock_params
-    params.require(:stock).permit(:name, :formula, :kind)
+    params.require(:stock).permit(:name, :description, :user_id)
   end
 end

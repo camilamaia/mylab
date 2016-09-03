@@ -8,8 +8,8 @@ p
 
 p
   strong Responsável:
-  = @stock.responsable.name
+  = @stock.responsible.name
 
-= link_to t(:back), stocks_path
+= link_to t(:back), home_path
 
 = link_to t(:edit), edit_stock_path(@stock)
