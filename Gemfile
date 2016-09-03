@@ -39,6 +39,11 @@ gem 'bootstrap-sass', '~> 2.3.2.2'
 # https://github.com/morshedalam/rename
 gem 'rename', '~> 1.0.2'
 
+# https://github.com/plataformatec/devise
+gem 'devise', '~> 3.5.10'
+
+gem 'awesome_print', '~> 1.7.0'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -50,6 +55,8 @@ group :development do
 
   # github.com/banister/binding_of_caller
   gem 'binding_of_caller'
+
+  gem 'pry-rails', '~> 0.3.4'
 end
 
 group :production do

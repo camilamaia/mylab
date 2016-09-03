@@ -1,0 +1,12 @@
+= simple_form_for @stock, html: {class: 'form-horizontal' } do |f|
+  .form
+    .form-group
+      = f.input :name, label_html: { class: 'form-control' }
+    .form-group
+      = f.input :description, label_html: { class: 'form-control' }
+    .form-group
+      .control-group
+        .controls
+          = f.collection_select :user_id, User.all, :id, :name, :prompt => "Escolha responsável", :class => 'form-control'
+
+  = f.submit class: 'btn btn-default'
