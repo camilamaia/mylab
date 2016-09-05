@@ -25,7 +25,7 @@ gem 'therubyracer', '~> 0.12.1', platforms: :ruby
 gem 'pg', '~> 0.17.1'
 
 # github.com/plataformatec/simple_form
-gem 'simple_form', '~> 3.0.1'
+gem 'simple_form', '~> 3.3.1'
 
 # github.com/brainspec/enumerize
 gem 'enumerize', '~> 0.7.0'
@@ -34,7 +34,7 @@ gem 'enumerize', '~> 0.7.0'
 gem 'slim-rails', '~> 2.1.0'
 
 # github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 2.3.2.2'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # https://github.com/morshedalam/rename
 gem 'rename', '~> 1.0.2'

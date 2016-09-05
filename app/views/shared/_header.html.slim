@@ -1,27 +1,13 @@
-nav.navbar.navbar-default
-  .container-fluid
-    .navbar-header
-      a.navbar-brand href="/#" MyLab
-
+nav.navbar.navbar-default role="navigation"
+  .navbar-header
+    a.navbar-brand href="/#" MyLab
+  #bs-example-navbar-collapse-1.collapse.navbar-collapse
     - if user_signed_in?
       ul.nav.navbar-nav.navbar-right
-        li.user-area
-          span.fa.fa-user
-          b = current_user.email
-
+        li
+          a
+            i.fa.fa-user aria-hidden="true"
+            span = current_user.email
         li = link_to "Sign out", destroy_user_session_path, :method => :delete
 
-/ nav.navbar.navbar-default
-/   .container-fluid
-/     .navbar-header
-/       a.navbar-brand href="/#" MyLab
-/       / <img alt="Brand" src="...">
 
-/     .navbar-collapse.collapse
-/       - if user_signed_in?
-/         ul.nav.navbar-nav.navbar-right
-/           li.user-area
-/             i.fa.fa-user aria-hidden="true"
-/             span = current_user.email
-
-/           li = link_to "Sign out", destroy_user_session_path, :method => :delete

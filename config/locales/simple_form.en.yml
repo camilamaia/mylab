@@ -1,8 +1,7 @@
-pt-BR:
+en:
   simple_form:
-    label:
-      "name": 'Nome'
-      "no": 'No'
+    "yes": 'Yes'
+    "no": 'No'
     required:
       text: 'required'
       mark: '*'
@@ -11,7 +10,7 @@ pt-BR:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
-    # Labels and hints examples
+    # Examples
     # labels:
     #   defaults:
     #     password: 'Password'
@@ -24,4 +23,9 @@ pt-BR:
     #   defaults:
     #     username: 'User name to sign in.'
     #     password: 'No special characters, please.'
-
+    # include_blanks:
+    #   defaults:
+    #     age: 'Rather not say'
+    # prompts:
+    #   defaults:
+    #     age: 'Select your age'

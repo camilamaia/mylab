@@ -1,15 +1,8 @@
-= simple_form_for @stock, html: {class: 'form-horizontal' } do |f|
-  .form
-    .form-group
-      = f.input :name, inline_label: true, label_html: { class: 'form-control' }
-    .form-group
-      = f.input :description, label_html: { class: 'form-control' }
-    .form-group
-      .control-group
-        .controls
-          = f.collection_select :user_id, User.all, :id, :name, :prompt => "Escolha responsável"
-
-    .controls
-        = f.submit class: 'btn btn-success form-control'
-        = link_to 'Cancelar', :back, {:class=>"btn btn-danger"}
-
+= simple_form_for @stock, html: {class: 'form-vertical' } do |f|
+  = f.error_notification
+  = f.input :name
+  = f.input :description
+  .form-group
+    = f.collection_select :user_id, User.all, :id, :name, :prompt => "Escolha responsável"
+  = f.submit class: 'btn btn-success'
+  = link_to 'Cancelar', :back, {:class=>"btn btn-danger"}
