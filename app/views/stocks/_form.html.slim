@@ -5,4 +5,4 @@
   .form-group
     = f.collection_select :user_id, User.all, :id, :name, :prompt => "Escolha responsável"
   = f.submit class: 'btn btn-success'
-  = link_to 'Cancelar', :back, {:class=>"btn btn-danger"}
+  = link_to 'Cancelar', :home, {:class=>"btn btn-danger"}
