@@ -1,6 +1,8 @@
 .col-md-12
-  .col-md-3.text-center.btn-default
-    = link_to 'Adicionar Novo Estoque', new_stock_path
+  .col-md-12.text-right
+    = link_to new_stock_path
+      i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
+      h4 Novo estoque
 
 - if @stocks.size > 0
   .stocks-container
