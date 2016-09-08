@@ -1,0 +1,8 @@
+= simple_form_for @stock, html: {class: 'form-vertical' } do |f|
+  = f.error_notification
+  = f.input :name
+  = f.input :description
+  .form-group
+    = f.collection_select :user_id, User.all, :id, :name, :prompt => "Escolha responsável"
+  = f.submit class: 'btn btn-success'
+  = link_to 'Cancelar', :home, {:class=>"btn btn-danger"}

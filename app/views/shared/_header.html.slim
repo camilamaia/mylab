@@ -1,0 +1,14 @@
+nav.navbar.navbar-default role="navigation"
+  .navbar-header
+    a.navbar-brand href="/#"
+     img src="/assets/logo.jpg"
+  #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    - if user_signed_in?
+      ul.nav.navbar-nav.navbar-right
+        li
+          a
+            i.fa.fa-user aria-hidden="true"
+            span = current_user.email
+        li = link_to "Sign out", destroy_user_session_path, :method => :delete
+
+

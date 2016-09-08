@@ -8,3 +8,5 @@
 # Ignore automatically generated documentation
 /doc/app
 .cache
+
+.DS_Store

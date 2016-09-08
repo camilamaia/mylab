@@ -25,7 +25,7 @@ gem 'therubyracer', '~> 0.12.1', platforms: :ruby
 gem 'pg', '~> 0.17.1'
 
 # github.com/plataformatec/simple_form
-gem 'simple_form', '~> 3.0.1'
+gem 'simple_form', '~> 3.3.1'
 
 # github.com/brainspec/enumerize
 gem 'enumerize', '~> 0.7.0'
@@ -34,10 +34,19 @@ gem 'enumerize', '~> 0.7.0'
 gem 'slim-rails', '~> 2.1.0'
 
 # github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 2.3.2.2'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # https://github.com/morshedalam/rename
 gem 'rename', '~> 1.0.2'
+
+# https://github.com/plataformatec/devise
+gem 'devise', '~> 3.5.10'
+
+# https://github.com/michaeldv/awesome_print
+gem 'awesome_print', '~> 1.7.0'
+
+# https://github.com/bokmann/font-awesome-rails
+gem "font-awesome-rails", '~> 4.6.3.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -50,6 +59,9 @@ group :development do
 
   # github.com/banister/binding_of_caller
   gem 'binding_of_caller'
+
+  # https://github.com/rweng/pry-rails
+  gem 'pry-rails', '~> 0.3.4'
 end
 
 group :production do

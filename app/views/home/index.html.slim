@@ -1,0 +1,31 @@
+.col-md-12
+  .col-md-12.text-right
+    = link_to new_stock_path
+      i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
+      h4 Novo estoque
+
+- if @stocks.size > 0
+  .stocks-container
+    - @stocks.each do |stock|
+      .col-md-12
+        .col-md-3
+        .col-md-9
+          h3
+            = stock.name
+          .panel.panel-default
+            .panel-body
+              = link_to stock_path(stock), method: :delete, data: { confirm: 'Você tem certeza que deseja remover o estoque ' + stock.name + '?'}
+                i.fa.fa-times.pull-right aria-hidden="true"
+              = link_to edit_stock_path(stock)
+                i.fa.fa-pencil.pull-right aria-hidden="true"
+              - if stock.description.size > 0
+                = stock.description
+              - else
+                a.stocks-brand.pull-center href="/#"
+                  img src="/assets/logoBW.jpg"
+            .panel-footer.text-right
+              = "Responsável: " + stock.responsible.name
+            a.btn.btn-default.col-md-12 Acessar
+
+- else
+  p Não há estoques cadastrados

@@ -1,0 +1,16 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image: url("/assets/back2leground.png");
+  background-size: cover;
+  color: #5F0074;
+  h3, h4 {
+    color: white;
+    text-shadow: 0 0 5px black;
+  }
+  .new-stock {
+    color: #5F0074;
+  }
+}
