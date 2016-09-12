@@ -6,7 +6,7 @@
 
 - if @stocks.size > 0
   .stocks-container
-    - @stocks.each do |stock|
+    - @stocks.order(:id).each do |stock|
       .col-md-12
         .col-md-3
         .col-md-9
