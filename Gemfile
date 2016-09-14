@@ -67,6 +67,8 @@ end
 group :production do
   # Use Uglifier as compressor for JavaScript assets
   gem 'uglifier', '>= 1.3.0'
+
+  gem 'rails_12factor', '>= 0.0.3'
 end
 
 # Use ActiveModel has_secure_password
@@ -80,3 +82,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+ ruby '2.2.4'
