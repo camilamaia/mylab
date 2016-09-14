@@ -50,6 +50,8 @@ gem "font-awesome-rails", '~> 4.6.3.1'
 
 gem 'sprockets', '3.6.3'
 
+gem 'puma'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
