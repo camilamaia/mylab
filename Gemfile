@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.6'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -47,6 +47,8 @@ gem 'awesome_print', '~> 1.7.0'
 
 # https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails", '~> 4.6.3.1'
+
+gem 'sprockets', '3.6.3'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
