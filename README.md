@@ -25,7 +25,7 @@ O intuito é que o profissional responsável pelo estoque tenha menos tempo gast
 ```
 
 ### Postgres Setup
-From the mylab directory:
+From mylab directory:
 ```bash
  rake db:create
  rake db:migrate
@@ -33,7 +33,7 @@ From the mylab directory:
 
 ### Rails Run
 
-From the mylab directory:
+From mylab directory:
 ```bash
  rails s
 ```
@@ -47,7 +47,7 @@ To see the application running, you only need to open a web browser on localhost
 
 ## Deploy: Production
 
-From the mylab directory, with your changes already pushed to git:
+From mylab directory, with your changes already pushed to git:
 ```
 $ git push heroku master
 ```
