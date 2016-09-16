@@ -9,6 +9,7 @@ nav.navbar.navbar-default role="navigation"
           a
             i.fa.fa-user aria-hidden="true"
             span = current_user.email
+        li = link_to "Gerar XLS", generate_xls_path, target: "blank"
         li = link_to "Sign out", destroy_user_session_path, :method => :delete
 
 
