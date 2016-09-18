@@ -8,7 +8,7 @@ class Stock < ActiveRecord::Base
   validate :user_belongs_to_lab
 
   def user_belongs_to_lab
-    if self.laboratory != user.laboratory
+    unless self.responsible.laboratories.include? self.laboratory
       errors.add(:responsible, 'user must belong to the same laboratory')
     end
   end
