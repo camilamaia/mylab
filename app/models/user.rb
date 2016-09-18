@@ -5,7 +5,10 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :stocks
-  belongs_to :laboratory
+  has_many :owned_laboratories, :class_name => 'Laboratory'
+
+  has_many :laboratory_users
+  has_many :laboratories, through: :laboratory_users
 
   validates :name, presence: true
 

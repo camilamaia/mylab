@@ -4,6 +4,7 @@ class Stock < ActiveRecord::Base
 
   validates :name, presence: true, uniqueness: true
   validates :responsible, presence: true
+  validates :laboratory, presence: true
   validate :user_belongs_to_lab
 
   def user_belongs_to_lab
