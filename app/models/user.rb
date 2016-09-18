@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :stocks
+  belongs_to :laboratory
 
   validates :name, presence: true
 
