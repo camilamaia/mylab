@@ -14,8 +14,6 @@
             = stock.name
           .panel.panel-default
             .panel-body
-              = link_to stock_path(stock), method: :delete, data: { confirm: 'Você tem certeza que deseja remover o estoque ' + stock.name + '?'}
-                i.fa.fa-times.pull-right aria-hidden="true"
               = link_to edit_stock_path(stock)
                 i.fa.fa-pencil.pull-right aria-hidden="true"
               - if stock.description.size > 0
