@@ -6,9 +6,13 @@ nav.navbar.navbar-default role="navigation"
     - if user_signed_in?
       ul.nav.navbar-nav.navbar-right
         li
-          a
+          a.dropdown-toggle id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
             i.fa.fa-user aria-hidden="true"
-            span = current_user.email
-        li = link_to "Sign out", destroy_user_session_path, :method => :delete
-
-
+            span = current_user.name
+            span.caret
+          ul.dropdown-menu.user-menu aria-labelledby="dropdownMenu1"
+            li
+              a href="#"
+                | Admin
+            li.divider[role="separator"]
+            li = link_to "Sair", destroy_user_session_path, :method => :delete

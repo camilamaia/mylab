@@ -183,7 +183,7 @@ DEPENDENCIES
   rails (= 4.0.6)
   rails_12factor (>= 0.0.3)
   rename (~> 1.0.2)
-  sass-rails
+  sass-rails (>= 3.2)
   sdoc
   simple_form (~> 3.3.1)
   slim-rails (~> 2.1.0)

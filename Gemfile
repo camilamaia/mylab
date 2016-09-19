@@ -3,8 +3,11 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.6'
 
+# github.com/twbs/bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 3.2'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -32,9 +35,6 @@ gem 'enumerize', '~> 0.7.0'
 
 # github.com/slim-template/slim-rails
 gem 'slim-rails', '~> 2.1.0'
-
-# github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 3.3.6'
 
 # https://github.com/morshedalam/rename
 gem 'rename', '~> 1.0.2'
