@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @stocks = Stock.all
+    @stocks = current_lab ? current_lab.stocks : []
   end
 
   def generate_xls

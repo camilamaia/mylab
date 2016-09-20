@@ -16,6 +16,8 @@ class LaboratoriesController < ApplicationController
     @laboratory.owner = current_user
 
     if @laboratory.save
+      current_user.current_lab = @laboratory
+      current_user.save!
       redirect_to home_path
     else
       render 'new'
