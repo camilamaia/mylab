@@ -41,4 +41,7 @@ Mylab::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
+  $stdout.sync = true
+
+
 end

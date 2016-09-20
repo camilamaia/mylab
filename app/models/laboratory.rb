@@ -3,7 +3,7 @@ class Laboratory < ActiveRecord::Base
 
   belongs_to :owner, :class_name => 'User', :foreign_key => 'user_id'
 
-  has_many :laboratory_users
+  has_many :laboratory_users, dependent: :destroy
   has_many :users, through: :laboratory_users
 
   validates :name, presence: true, uniqueness: true

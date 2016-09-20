@@ -28,9 +28,9 @@ class LaboratoriesController < ApplicationController
 
   def update
     @laboratory = Laboratory.find(params[:id])
-    laboratory_params[:owner] = current_user
+    params[:laboratory][:user_id] = current_user.id
 
-    if @laboratory.update(laboratory_params)
+    if @laboratory.update(params[:laboratory].permit(:name, :description, :user_id))
       redirect_to home_path
     else
       render 'edit'
