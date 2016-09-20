@@ -29,7 +29,10 @@
     p Não há estoques cadastrados
 
 - else
-  p Não há laboratórios cadastrados. Peça a um colega para que o adicione em um de seus estoques, ou crie o seu aqui!
-  = link_to new_laboratory_path
-        i.fa.fa-plus-circle.fa-3x aria-hidden="true"
-        h4 Novo Laboratório
+  .message
+    h3 Ops! Não há laboratórios cadastrados ainda. Peça a um colega para que o adicione em um de seus laboratórios, ou crie o seu aqui!
+    .row
+      = link_to new_laboratory_path, :class => 'col-md-3.text-center'
+          h4
+            i.fa.fa-plus-circle.fa-3x aria-hidden="true"
+            | Novo Laboratório
