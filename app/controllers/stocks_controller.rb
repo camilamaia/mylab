@@ -28,7 +28,7 @@ class StocksController < ApplicationController
   def update
     @stock = Stock.find(params[:id])
 
-    if @stock.update(params[:stock].permit(:name, :description, :user_id))
+    if @stock.update(params[:stock].permit(:name, :description, :user_id, :laboratory_id))
       redirect_to home_path
     else
       render 'edit'
@@ -45,6 +45,6 @@ class StocksController < ApplicationController
   private
 
   def stock_params
-    params.require(:stock).permit(:name, :description, :user_id)
+    params.require(:stock).permit(:name, :description, :user_id, :laboratory_id)
   end
 end

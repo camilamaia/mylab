@@ -1,4 +1,4 @@
-- if current_user.laboratories.size != 0
+- if current_lab
   .col-md-12
     .col-md-12.text-right
       = link_to new_stock_path
@@ -29,4 +29,7 @@
     p Não há estoques cadastrados
 
 - else
-  p Não há laboratórios cadastrados
+  p Não há laboratórios cadastrados. Peça a um colega para que o adicione em um de seus estoques, ou crie o seu aqui!
+  = link_to new_laboratory_path
+        i.fa.fa-plus-circle.fa-3x aria-hidden="true"
+        h4 Novo Laboratório
