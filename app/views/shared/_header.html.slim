@@ -11,6 +11,7 @@ nav.navbar.navbar-default role="navigation"
             span = current_user.name
             span.caret
           ul.dropdown-menu.user-menu aria-labelledby="dropdownMenu1"
+            li = link_to "Gerar XLS", generate_xls_path, target: "blank"
             li
               a href="#"
                 | Admin

@@ -48,6 +48,8 @@ gem 'awesome_print', '~> 1.7.0'
 # https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails", '~> 4.6.3.1'
 
+gem 'axlsx', '~> 2.0.1'
+
 gem 'sprockets', '3.6.3'
 
 gem 'puma'
