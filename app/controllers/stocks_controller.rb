@@ -13,6 +13,7 @@ class StocksController < ApplicationController
 
   def create
     @stock = Stock.new(stock_params)
+    @stock.laboratory = current_lab
 
     if @stock.save
       redirect_to home_path
@@ -45,6 +46,6 @@ class StocksController < ApplicationController
   private
 
   def stock_params
-    params.require(:stock).permit(:name, :description, :user_id)
+    params.require(:stock).permit(:name, :description, :user_id, :laboratory_id)
   end
 end

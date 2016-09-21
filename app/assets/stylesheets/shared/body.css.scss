@@ -3,14 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-image: url("/assets/back2leground.png");
+  background-image: url("/assets/backleground.png");
   background-size: cover;
-  color: #5F0074;
-  h3, h4 {
+  color: white;
+  a, a:hover {
     color: white;
-    text-shadow: 0 0 5px black;
+    text-decoration: none;
   }
   .new-stock {
-    color: #5F0074;
+    color: #4aaaa5;
   }
 }

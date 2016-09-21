@@ -27,7 +27,7 @@ Mylab::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -43,7 +43,7 @@ Mylab::Application.configure do
   # config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :info
+  config.log_level = :warn
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -65,6 +65,10 @@ Mylab::Application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  config.action_mailer.default_url_options = { host: 'agile-springs-54168.herokuapp.com' }
+
+  Rails.application.routes.default_url_options[:host] = 'agile-springs-54168.herokuapp.com'
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
@@ -77,4 +81,20 @@ Mylab::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: ENV["GMAIL_DOMAIN"],
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"]
+  }
+
 end

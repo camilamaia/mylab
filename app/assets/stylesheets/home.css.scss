@@ -1,3 +1,22 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.message {
+  text-align: center;
+
+  .row {
+    margin-top: 5%;
+  }
+  i {
+    color: #4aaaa5;
+    vertical-align:middle;
+    margin-right: 2%
+  }
+
+  a, a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+}

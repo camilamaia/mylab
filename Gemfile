@@ -3,8 +3,11 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.6'
 
+# github.com/twbs/bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails', '>= 3.2'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -33,9 +36,6 @@ gem 'enumerize', '~> 0.7.0'
 # github.com/slim-template/slim-rails
 gem 'slim-rails', '~> 2.1.0'
 
-# github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 3.3.6'
-
 # https://github.com/morshedalam/rename
 gem 'rename', '~> 1.0.2'
 
@@ -47,6 +47,12 @@ gem 'awesome_print', '~> 1.7.0'
 
 # https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails", '~> 4.6.3.1'
+
+gem 'axlsx', '~> 2.0.1'
+
+gem 'sprockets', '3.6.3'
+
+gem 'puma'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -67,6 +73,8 @@ end
 group :production do
   # Use Uglifier as compressor for JavaScript assets
   gem 'uglifier', '>= 1.3.0'
+
+  gem 'rails_12factor', '>= 0.0.3'
 end
 
 # Use ActiveModel has_secure_password
@@ -80,3 +88,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+ ruby '2.2.2'

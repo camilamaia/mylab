@@ -10,3 +10,5 @@
 .cache
 
 .DS_Store
+.env
+Procfile

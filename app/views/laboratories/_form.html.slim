@@ -1,0 +1,6 @@
+= simple_form_for @laboratory, html: {class: 'form-vertical' } do |f|
+  = f.error_notification
+  = f.input :name
+  = f.input :description
+  = f.submit class: 'btn btn-success'
+  = link_to 'Cancelar', :home, {:class=>"btn btn-danger"}

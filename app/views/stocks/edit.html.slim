@@ -1,3 +1,12 @@
-h1 #{t(:editing_stock)}
+.page-header
+  h1 #{t(:editing_stock)}
 
 = render 'form'
+
+.page-header
+  h3 #{t(:destroy_stock)}
+
+p
+  | Depois de excluir um estoque, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!
+
+= link_to "Excluir Estoque", stock_path(@stock), method: :delete, data: { confirm: 'Você tem certeza que deseja remover o estoque ' + @stock.name + '? Com esta ação, todos os dados deste estoque serão perdidos.'}, class: "btn btn-danger"
