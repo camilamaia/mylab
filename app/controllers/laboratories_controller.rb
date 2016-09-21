@@ -8,7 +8,7 @@ class LaboratoriesController < ApplicationController
   end
 
   def index
-    @laboratorys = Laboratory.all
+    @laboratories = Laboratory.all
   end
 
   def create

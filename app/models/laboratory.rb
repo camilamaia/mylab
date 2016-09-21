@@ -1,5 +1,5 @@
 class Laboratory < ActiveRecord::Base
-  has_many :stocks
+  has_many :stocks, dependent: :destroy
 
   belongs_to :owner, :class_name => 'User', :foreign_key => 'user_id'
 
