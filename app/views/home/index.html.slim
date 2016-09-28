@@ -19,14 +19,15 @@
                 - if stock.description.size > 0
                   = stock.description
                 - else
-                  a.stocks-brand.pull-center href="/#"
-                    img src="/assets/logo.png"
+                  | Sem descrição.
+                = link_to edit_stock_path(stock)
+                  |  Adicionar descrição
               .panel-footer.text-right
                 = "Responsável: " + stock.responsible.name
               a.btn.btn-default.col-md-12 Acessar
 
   - else
-    p Não há estoques cadastrados
+    h4 Não há estoques cadastrados
 
 - else
   .message
