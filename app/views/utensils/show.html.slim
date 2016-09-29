@@ -1,0 +1,23 @@
+p
+  strong #{t(:identification_number)}:
+  = @utensil.id
+
+p
+  strong Nome:
+  = @utensil.name
+
+p
+  strong Descrição:
+  = @utensil.description
+
+p
+  strong Código UFSC:
+  = @utensil.ufsc_id
+
+p
+  strong Quantidade:
+  = @utensil.quantity
+
+= link_to t(:back), home_path
+
+= link_to t(:edit), edit_utensil_path(@utensil)

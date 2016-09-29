@@ -1,6 +1,9 @@
 - if current_lab
   .col-md-12
     .col-md-12.text-right
+      = link_to new_utensil_path
+        i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
+        h4 Novo Utensílio
       = link_to new_stock_path
         i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
         h4 Novo estoque

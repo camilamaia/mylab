@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160922134635) do
+ActiveRecord::Schema.define(version: 20160929140242) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,10 +29,11 @@ ActiveRecord::Schema.define(version: 20160922134635) do
 
   create_table "materials", force: true do |t|
     t.string   "name"
-    t.string   "formula"
+    t.text     "description"
+    t.integer  "actable_id"
+    t.string   "actable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "kind"
   end
 
   create_table "stocks", force: true do |t|
@@ -67,5 +68,10 @@ ActiveRecord::Schema.define(version: 20160922134635) do
   add_index "users", ["current_lab_id"], name: "index_users_on_current_lab_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "utensils", force: true do |t|
+    t.integer "ufsc_id"
+    t.integer "quantity"
+  end
 
 end
