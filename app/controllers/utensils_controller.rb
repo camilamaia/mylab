@@ -7,10 +7,6 @@ class UtensilsController < ApplicationController
     @utensil = Utensil.find(params[:id])
   end
 
-  def index
-    @utensils = Utensil.all
-  end
-
   def create
     @utensil = Utensil.new(utensil_params)
 
