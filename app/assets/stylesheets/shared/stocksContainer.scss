@@ -3,11 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .stocks-container {
-  margin-top: 5%;
-}
+  ul {
+    list-style: none;
+    max-height: 75vh;
+    overflow-y:scroll;
+    padding-left: 20%;
+  }
 
-.stocks-brand > img {
-  width: 40%;
-  height: 40%;
-  opacity: 0.3;
+  .panel {
+    float: left;
+    width: 100%;
+    border-radius: 15px;
+    color: #5E5E5E;
+    margin: 2% 0 5% 0;
+
+    i {
+      color: #4aaaa5;
+    }
+
+    a, a:hover {
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      color: #4aaaa5;
+    }
+  }
 }

@@ -1,18 +1,28 @@
 - if current_lab
-  .col-md-12
-    .col-md-12.text-right
-      = link_to new_utensil_path
-        i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
-        h4 Novo Utensílio
+  .row
+    .col-md-9
+      h2.lab_info = "Bem-vindo ao #{current_lab.name}"
+      p = current_lab.description
+    .col-md-3.text-right
       = link_to new_stock_path
         i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
         h4 Novo estoque
   - if @stocks.size > 0
-    .stocks-container
-      - @stocks.order(:id).each do |stock|
-        .col-md-12
-          .col-md-3
-          .col-md-9
+    .col-md-4
+      .panel.panel-danger.alerts
+        .panel-heading
+          h3.panel-title
+            | Alertas
+        .panel-body
+          | Sem alertas
+      .catalog
+        = link_to new_stock_path
+          i.fa.fa-book.fa-3x
+          h3 Catálogo de Materiais
+    .col-md-8.stocks-container
+      ul
+        - @stocks.order(:id).each do |stock|
+          li
             h3
               = stock.name
             .panel.panel-default

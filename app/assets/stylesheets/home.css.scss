@@ -19,5 +19,25 @@
     color: white;
     text-decoration: none;
   }
+}
 
+.panel.panel-danger.alerts {
+  color: #000;
+  margin-top: 30%;
+  height: 30vh;
+  border-radius: 15px;
+}
+
+.panel-heading {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.lab_info {
+  margin: 0;
+}
+
+.catalog {
+  text-align: center;
+  margin-top: 30%
 }
