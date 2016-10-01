@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160929140242) do
+ActiveRecord::Schema.define(version: 20161001165947) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "item_utensils", force: true do |t|
+    t.integer "current_quantity"
+  end
+
+  create_table "items", force: true do |t|
+    t.integer  "material_id"
+    t.integer  "stock_id"
+    t.integer  "actable_id"
+    t.string   "actable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "items", ["material_id"], name: "index_items_on_material_id", using: :btree
+  add_index "items", ["stock_id"], name: "index_items_on_stock_id", using: :btree
 
   create_table "laboratories", force: true do |t|
     t.string  "name"

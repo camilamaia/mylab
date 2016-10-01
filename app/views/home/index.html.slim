@@ -37,7 +37,7 @@
                   |  Adicionar descrição
               .panel-footer.text-right
                 = "Responsável: " + stock.responsible.name
-              a.btn.btn-default.col-md-12 Acessar
+              = link_to 'Acessar', items_path(:stock => stock), :class => 'btn btn-default col-md-12'
 
   - else
     h4 Não há estoques cadastrados
