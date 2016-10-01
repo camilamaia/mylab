@@ -9,6 +9,7 @@ class UtensilsController < ApplicationController
 
   def create
     @utensil = Utensil.new(utensil_params)
+    @utensil.description = @utensil.calculate_description utensil_params
 
     if @utensil.save
       redirect_to @utensil

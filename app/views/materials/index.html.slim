@@ -15,8 +15,8 @@ h3 Catálogo de Materiais
           td= material.id
           td= material.name
           td= material.description
-          td= link_to 'Mostrar', material
-          td= link_to 'Editar', edit_material_path(material)
+          td= link_to 'Mostrar', send(material.route_path, material)
+          td= link_to 'Editar', send(material.edit_path, material)
 
 .dropdown
   a.dropdown-toggle id="newMaterialDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
