@@ -3,8 +3,22 @@ nav.navbar.navbar-default role="navigation"
     a.navbar-brand href="/#"
      img src="/assets/logo.png"
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
-    - if user_signed_in?
-      ul.nav.navbar-nav.navbar-right
+    ul.nav.navbar-nav.navbar-right
+      li
+        a.dropdown-toggle id="i18nDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
+          i.fa.fa-language aria-hidden="true"
+          span Language
+          span.caret
+        ul.dropdown-menu.user-menu aria-labelledby="i18nDropdownMenu"
+            li
+              = link_to select_locale_path("pt-BR")
+                i.fa.fa-language aria-hidden="true"
+                span Português (Brasil)
+            li
+              = link_to select_locale_path(:en)
+                i.fa.fa-language aria-hidden="true"
+                span English (US)
+      - if user_signed_in?
         - if current_user.laboratories.length != 0
           li
             a.dropdown-toggle id="labDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"

@@ -7,9 +7,15 @@ class ApplicationController < ActionController::Base
 
   before_action :authenticate_user!
 
+  before_action :set_locale
+
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
   helper_method :current_lab
+
+  def set_locale
+    I18n.locale = current_user.try(:locale) || I18n.default_locale
+  end
 
   def current_lab
     current_user.current_lab ||= current_user.laboratories.first

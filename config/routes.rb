@@ -1,16 +1,4 @@
 Mylab::Application.routes.draw do
-  get 'item_utensils/new'
-
-  get 'item_utensils/show'
-
-  get 'item_utensils/create'
-
-  get 'item_utensils/edit'
-
-  get 'item_utensils/update'
-
-  get 'item_utensils/destroy'
-
   devise_for :users
   resources :stocks
 
@@ -25,5 +13,9 @@ Mylab::Application.routes.draw do
 
   resources :laboratories do
     post 'update_current_lab', on: :member
+  end
+
+  resources :locales do
+    get :select, on: :member
   end
 end
