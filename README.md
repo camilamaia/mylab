@@ -9,6 +9,7 @@ Website: https://agile-springs-54168.herokuapp.com/
 ### Requirements
 
 * Ruby - This project uses `.ruby-version`, `.ruby-gemset` and `Gemfile` to specify dependencies. Make sure that `rvm` or `rbenv` is installed on your computer. Check `rvm info` command to see that the correct ruby version and gemset are set. Also make sure that `./bin` is in your `$PATH` in the first place.
+* Rails 4
 * PostgreSQL 9.4
 
 ### Repositories Setup
@@ -16,7 +17,6 @@ Website: https://agile-springs-54168.herokuapp.com/
 ```bash
  git clone git@github.com:camilamaia/mylab.git
  cd mylab
- gem install rails -v 4.2.0
  bundle
  bundle update
 ```
