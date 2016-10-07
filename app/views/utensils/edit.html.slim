@@ -1,0 +1,12 @@
+.page-header
+  h1 #{t(:editing_utensil)}
+
+= render 'form'
+
+.page-header
+  h3 #{t(:destroy_utensil)}
+
+p
+  | Depois de excluir um utensílio, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!
+
+= link_to "Excluir Utensílio", utensil_path(@utensil), method: :delete, data: { confirm: 'Você tem certeza que deseja remover o utensílio ' + @utensil.name + @utensil.description + '? Com esta ação, todos os dados deste utensílio serão perdidos.'}, class: "btn btn-danger"

@@ -1,0 +1,19 @@
+h3= @stock.name
+.page-header
+  h3= "Utensílio #{@item_utensil.id}"
+
+.col-md-4
+  .table-responsive
+    table.table.borderless
+      thead
+        tr
+          td Material
+          td= @item_utensil.material.name_with_description
+      tbody
+        tr
+          td Quantidade atual
+          td= @item_utensil.current_quantity
+
+.col-md-12
+  = link_to t(:back), items_path(:stock => @stock), :class=>"btn btn-default"
+  = link_to t(:edit), edit_item_utensil_path({id: @item_utensil.id, :stock => @stock.id}), {:class=>"btn btn-default"}

@@ -1,0 +1,31 @@
+.row
+    .col-md-9
+      h3 = @stock.name
+    .col-md-3.text-right
+      .dropdown
+        a.dropdown-toggle id="newMaterialDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
+          h4 Novo Item
+        ul.dropdown-menu.pull-right aria-labelledby="newMaterialDropdownMenu"
+          li
+            = link_to new_item_utensil_path({stock: @stock})
+              span Novo Utensílio
+
+.table-responsive
+  table.table.table-inverse
+    thead
+      tr
+        th Identificação
+        th Categoria
+        th Material
+        th Descrição
+        th
+        th
+    - @items.each do |item|
+      tbody
+        tr
+          td.col-md-1= item.id
+          td.col-md-1= item.material_type
+          td.col-md-4= item.material.name_with_description
+          td.col-md-4= item.description
+          td.col-md-1= link_to 'Mostrar', send(item.route_path, {id: item.id, :stock => @stock.id})
+          td.col-md-1= link_to 'Editar', send(item.edit_path, {id: item.id, :stock => @stock.id})

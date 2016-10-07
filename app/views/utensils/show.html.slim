@@ -1,0 +1,21 @@
+.page-header
+  h3= "Material #{@utensil.id}"
+
+.col-md-4
+  .table-responsive
+    table.table.borderless
+      thead
+        tr
+          td Nome
+          td= @utensil.name
+      tbody
+        tr
+          td Código UFSC
+          td= @utensil.ufsc_id
+        tr
+          td Quantidade
+          td= @utensil.quantity
+
+.col-md-12
+  = link_to t(:back), :materials, {:class=>"btn btn-default"}
+  = link_to t(:edit), edit_utensil_path(@utensil), {:class=>"btn btn-default"}

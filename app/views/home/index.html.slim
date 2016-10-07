@@ -1,15 +1,29 @@
 - if current_lab
-  .col-md-12
-    .col-md-12.text-right
+  .row
+    .col-md-9
+      h2.lab_info = "Bem-vindo ao #{current_lab.name}"
+      p = current_lab.description
+      p = link_to t('edit_lab'), edit_laboratory_path(current_lab)
+    .col-md-3.text-right
       = link_to new_stock_path
         i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
         h4 Novo estoque
   - if @stocks.size > 0
-    .stocks-container
-      - @stocks.order(:id).each do |stock|
-        .col-md-12
-          .col-md-3
-          .col-md-9
+    .col-md-4
+      .jumbotron
+        h3
+          | Alertas
+        p Há materiais com validade próxima ao vencimento.
+        p
+          a.btn.btn-lg href="#" role="button"  Ver no Estoque
+      .catalog
+        = link_to materials_path
+          i.fa.fa-book.fa-3x
+          h3 Catálogo de Materiais
+    .col-md-8.stocks-container
+      ul
+        - @stocks.order(:id).each do |stock|
+          li
             h3
               = stock.name
             .panel.panel-default
@@ -24,7 +38,7 @@
                   |  Adicionar descrição
               .panel-footer.text-right
                 = "Responsável: " + stock.responsible.name
-              a.btn.btn-default.col-md-12 Acessar
+              = link_to 'Acessar', items_path(:stock => stock), :class => 'btn btn-default col-md-12'
 
   - else
     h4 Não há estoques cadastrados

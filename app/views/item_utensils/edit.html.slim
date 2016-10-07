@@ -1,0 +1,13 @@
+h3= @stock.name
+.page-header
+  h3= "Utensílio #{@item_utensil.id}"
+
+= render 'form'
+
+.page-header
+  h3 #{t(:remove_utensil)}
+
+p
+  | Depois de remover um utensílio do seu estoque, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!
+
+= link_to "Remover Utensílio", item_utensil_path(@item_utensil, :stock => @stock), method: :delete, data: { confirm: 'Você tem certeza que deseja remover o utensílio ' + @item_utensil.description + '? Com esta ação, todos os dados deste utensílio serão perdidos.'}, class: "btn btn-danger"

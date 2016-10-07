@@ -11,10 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160922134635) do
+ActiveRecord::Schema.define(version: 20161004141527) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "item_utensils", force: true do |t|
+    t.integer "current_quantity"
+  end
+
+  create_table "items", force: true do |t|
+    t.integer  "material_id"
+    t.integer  "stock_id"
+    t.integer  "actable_id"
+    t.string   "actable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "description"
+  end
+
+  add_index "items", ["material_id"], name: "index_items_on_material_id", using: :btree
+  add_index "items", ["stock_id"], name: "index_items_on_stock_id", using: :btree
 
   create_table "laboratories", force: true do |t|
     t.string  "name"
@@ -29,10 +46,11 @@ ActiveRecord::Schema.define(version: 20160922134635) do
 
   create_table "materials", force: true do |t|
     t.string   "name"
-    t.string   "formula"
+    t.text     "description"
+    t.integer  "actable_id"
+    t.string   "actable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "kind"
   end
 
   create_table "stocks", force: true do |t|
@@ -67,5 +85,10 @@ ActiveRecord::Schema.define(version: 20160922134635) do
   add_index "users", ["current_lab_id"], name: "index_users_on_current_lab_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "utensils", force: true do |t|
+    t.integer "ufsc_id"
+    t.integer "quantity"
+  end
 
 end
