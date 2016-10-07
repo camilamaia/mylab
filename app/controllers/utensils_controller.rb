@@ -9,7 +9,7 @@ class UtensilsController < ApplicationController
 
   def create
     @utensil = Utensil.new(utensil_params)
-    @utensil.description = @utensil.calculate_description utensil_params
+    @utensil.description = @utensil.friendly_description utensil_params
 
     if @utensil.save
       redirect_to @utensil
@@ -24,8 +24,9 @@ class UtensilsController < ApplicationController
 
   def update
     @utensil = Utensil.find(params[:id])
+    @utensil.description = @utensil.friendly_description utensil_params
 
-    if @utensil.update(params[:utensil].permit(:ufsc_id, :quantity))
+    if @utensil.update(utensil_params)
       redirect_to @utensil
     else
       render 'edit'

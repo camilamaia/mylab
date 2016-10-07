@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    @items = Item.where stock: params[:stock]
-    ap @items
+    @stock = Stock.find params[:stock]
+    @items = Item.where stock: @stock
   end
 end

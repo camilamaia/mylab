@@ -9,12 +9,12 @@
         h4 Novo estoque
   - if @stocks.size > 0
     .col-md-4
-      .panel.panel-danger.alerts
-        .panel-heading
-          h3.panel-title
-            | Alertas
-        .panel-body
-          | Sem alertas
+      .jumbotron
+        h3
+          | Alertas
+        p Há materiais com validade próxima ao vencimento.
+        p
+          a.btn.btn-lg href="#" role="button"  Ver no Estoque
       .catalog
         = link_to materials_path
           i.fa.fa-book.fa-3x

@@ -1,10 +1,20 @@
-h3 Catálogo de Materiais
+.row
+    .col-md-9
+      h3 Catálogo de Materiais
+    .col-md-3.text-right
+      .dropdown
+        a.dropdown-toggle id="newMaterialDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
+          h4 Novo Material
+        ul.dropdown-menu.pull-right aria-labelledby="newMaterialDropdownMenu"
+          li
+            = link_to new_utensil_path
+              span Novo Utensílio
 
 .table-responsive
   table.table.table-inverse
     thead
       tr
-        th Número de Indentificação
+        th Indentificação
         th Nome
         th Descrição
         th
@@ -12,19 +22,8 @@ h3 Catálogo de Materiais
     - @materials.each do |material|
       tbody
         tr
-          td= material.id
-          td= material.name
-          td= material.description
-          td= link_to 'Mostrar', send(material.route_path, material)
-          td= link_to 'Editar', send(material.edit_path, material)
-
-.dropdown
-  a.dropdown-toggle id="newMaterialDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
-    i.fa.fa-plus aria-hidden="true"
-    span Novo Material
-    span.caret
-  ul.dropdown-menu aria-labelledby="newMaterialDropdownMenu"
-    li
-      = link_to new_utensil_path
-        i.fa.fa-plus aria-hidden="true"
-        span Novo Utensílio
+          td.col-md-1= material.id
+          td.col-md-1= material.name
+          td.col-md-8= material.description
+          td.col-md-1= link_to 'Mostrar', send(material.route_path, material)
+          td.col-md-1= link_to 'Editar', send(material.edit_path, material)

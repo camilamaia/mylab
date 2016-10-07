@@ -48,13 +48,18 @@ gem 'awesome_print', '~> 1.7.0'
 # https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails", '~> 4.6.3.1'
 
+# https://github.com/hzamani/active_record-acts_as
 gem 'active_record-acts_as', '~> 1.0.8'
+
+# https://github.com/olbrich/ruby-units
+gem 'ruby-units', '~> 2.0.1'
 
 gem 'axlsx', '~> 2.0.1'
 
 gem 'sprockets', '3.6.3'
 
 gem 'puma'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

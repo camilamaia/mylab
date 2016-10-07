@@ -39,5 +39,25 @@
 
 .catalog {
   text-align: center;
-  margin-top: 30%
+  margin-top: 30%;
+}
+
+.jumbotron, .container .jumbotron {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #fff;
+    margin-top: 10vh;
+    color: #35404f;
+    border-radius: 15px;
+
+    p {
+      font-size: 16px;
+    }
+
+    a.btn {
+      margin-left: 20%;
+      background: #960909;
+    }
 }
