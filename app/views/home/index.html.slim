@@ -3,6 +3,7 @@
     .col-md-9
       h2.lab_info = "Bem-vindo ao #{current_lab.name}"
       p = current_lab.description
+      p = link_to t('edit_lab'), edit_laboratory_path(current_lab)
     .col-md-3.text-right
       = link_to new_stock_path
         i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"

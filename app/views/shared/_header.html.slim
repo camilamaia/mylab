@@ -14,7 +14,7 @@ nav.navbar.navbar-default role="navigation"
             ul.dropdown-menu.user-menu aria-labelledby="labDropdownMenu"
               - current_user.laboratories.order(:id).each do |lab|
                 li
-                  = link_to update_current_lab_laboratory_path(lab.id, id: lab.id), method: :post
+                  = link_to update_current_lab_laboratory_path(lab.id), method: :post
                     i.fa.fa-flask aria-hidden="true"
                     span = lab.name
               li.divider[role="separator"]
