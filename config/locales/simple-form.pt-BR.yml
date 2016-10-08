@@ -10,14 +10,13 @@ pt-BR:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Alguns erros foram encontrados, por favor verifique:"
-    # Labels and hints examples
-    # labels:
-    #   password: 'Password'
-    #   user:
-    #     new:
-    #       email: 'E-mail para efetuar o sign in.'
-    #     edit:
-    #       email: 'E-mail.'
-    # hints:
-    #   username: 'User name to sign in.'
-    #   password: 'No special characters, please.'
+    labels:
+      defaults:
+        name: 'Nome'
+        description: 'Descrição'
+        material: 'Material'
+        current_quantity: 'Quantidade atual'
+        responsible: 'Responsável'
+        ufsc_id: 'Código UFSC'
+    helpers:
+      submit: 'Salvar'

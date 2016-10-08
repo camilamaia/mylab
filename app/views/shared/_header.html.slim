@@ -7,7 +7,7 @@ nav.navbar.navbar-default role="navigation"
       li
         a.dropdown-toggle id="i18nDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
           i.fa.fa-language aria-hidden="true"
-          span Language
+          span = t("header.language")
           span.caret
         ul.dropdown-menu.user-menu aria-labelledby="i18nDropdownMenu"
             li
@@ -32,7 +32,7 @@ nav.navbar.navbar-default role="navigation"
                     i.fa.fa-flask aria-hidden="true"
                     span = lab.name
               li.divider[role="separator"]
-              li = link_to "Novo Laboratório", new_laboratory_path
+              li = link_to t("header.new_laboratory"), new_laboratory_path
         li
           a.dropdown-toggle id="userDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
             i.fa.fa-user aria-hidden="true"

@@ -2,8 +2,8 @@
   = f.error_notification
   = f.label :material
   .form-group
-    = f.collection_select :material_id, Utensil.all, :id, :name_with_description, :prompt => "Escolher", :class=>"selectpicker"
+    = f.collection_select :material_id, Utensil.all, :id, :name_with_description, prompt: :translate, :class=>"selectpicker"
   = f.input :current_quantity
   = hidden_field_tag :stock, @stock.id
   = f.submit class: 'btn btn-success'
-  = link_to 'Cancelar', items_path(:stock => @stock), :class=>"btn btn-danger"
+  = link_to t(:cancel), items_path(:stock => @stock), :class=>"btn btn-danger"

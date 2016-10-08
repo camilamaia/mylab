@@ -1,19 +1,21 @@
 .page-header
-  h3= "Material #{@utensil.id}"
+  h3= t("material_category.show.title")
 
 .col-md-4
   .table-responsive
     table.table.borderless
       thead
         tr
-          td Nome
-          td= @utensil.name
+          th colspan="2" = t("material_category.show.subtitle", category: t("material_category.categories.#{@utensil.actable_type.underscore}"), id: @utensil.id)
       tbody
         tr
-          td Código UFSC
+          td = t("material_category.show.name")
+          td= @utensil.name
+        tr
+          td = t("material_category.show.code")
           td= @utensil.ufsc_id
         tr
-          td Quantidade
+          td = t("material_category.show.quantity")
           td= @utensil.quantity
 
 .col-md-12

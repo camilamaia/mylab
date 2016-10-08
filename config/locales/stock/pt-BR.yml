@@ -1,0 +1,9 @@
+pt-BR:
+  stock:
+    edit:
+      title: "Editar Estoque"
+      destroy: "Excluir Estoque"
+      destroy_alert: "Depois de excluir um estoque, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!"
+      destroy_confirmation: "Você tem certeza que deseja excluir o estoque '%{stock_name}'? Com esta ação, todos os dados deste estoque serão perdidos"
+    new:
+      title: "Novo Estoque"

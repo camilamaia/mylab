@@ -1,0 +1,10 @@
+en:
+  material:
+    index:
+      title: "Materials Catalog"
+      new_material: "New Material"
+      utensil: "Utensil"
+      code: "Code"
+      name: "Name"
+      description: "Description"
+

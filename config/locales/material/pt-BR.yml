@@ -1,0 +1,10 @@
+pt-BR:
+  material:
+    index:
+      title: "Catálogo de Materiais"
+      new_material: "Novo Material"
+      utensil: "Utensílio"
+      code: "Código"
+      name: "Nome"
+      description: "Descrição"
+

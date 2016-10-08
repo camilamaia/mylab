@@ -1,0 +1,14 @@
+en:
+  item_category:
+    categories:
+      utensil: "Utensil"
+    edit:
+      title: "%{category} %{id}"
+      remove: "Remove %{category}"
+      remove_alert: "After removing an %{category} from your stock, there is no turning back. Please make absolutely sure of this action!"
+      remove_confirmation: "Are you sure you want to remove the %{category} '%{description}'? With this action, all the data of this %{category} will be lost"
+    new:
+      title: "Add %{category}"
+    show:
+      title: "%{category} %{id}"
+      current_quantity: "Current quantity"

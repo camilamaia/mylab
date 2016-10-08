@@ -1,0 +1,16 @@
+pt-BR:
+  home:
+    index:
+      welcome: "Bem-vindo ao %{lab_name}"
+      edit: "Editar"
+      new_stock: "Novo Estoque"
+      alerts: "Alertas"
+      materials_catalog: "Catálogo de Materiais"
+      no_description: "Sem descrição"
+      add_description: "Adicionar descrição"
+      responsible: "Responsável %{responsible}"
+      access: "Acessar"
+      no_stocks: "Não há estoques cadastrados"
+      no_labs: "Ops! Não há laboratórios cadastrados ainda. Peça a um colega para que o adicione em um de seus laboratórios, ou crie o seu aqui!"
+      new_lab: "Novo Laboratório"
+
