@@ -1,0 +1,14 @@
+pt-BR:
+  item_category:
+    categories:
+      utensil: "Utensílio"
+    edit:
+      title: "%{category} %{id}"
+      remove: "Remover %{category}"
+      remove_alert: "Depois de remover um %{category} do seu estoque, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!"
+      remove_confirmation: "Você tem certeza que deseja remover o %{category} '%{description}'? Com esta ação, todos os dados deste %{category} serão perdidos"
+    new:
+      title: "Adicionar %{category}"
+    show:
+      title: "%{category} %{id}"
+      current_quantity: "Quantidade atual"

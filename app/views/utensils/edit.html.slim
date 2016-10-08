@@ -1,12 +1,11 @@
 .page-header
-  h1 #{t(:editing_utensil)}
+  h3 = t("material_category.edit.title", category: t("material_category.categories.#{@utensil.actable_type.underscore}"))
 
 = render 'form'
 
 .page-header
-  h3 #{t(:destroy_utensil)}
+  h3 = t("material_category.edit.destroy", category: t("material_category.categories.#{@utensil.actable_type.underscore}"))
 
-p
-  | Depois de excluir um utensílio, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!
+p = t("material_category.edit.destroy_alert", category: t("material_category.categories.#{@utensil.actable_type.underscore}"))
 
-= link_to "Excluir Utensílio", utensil_path(@utensil), method: :delete, data: { confirm: 'Você tem certeza que deseja remover o utensílio ' + @utensil.name + @utensil.description + '? Com esta ação, todos os dados deste utensílio serão perdidos.'}, class: "btn btn-danger"
+= link_to t("material_category.edit.destroy", category: t("material_category.categories.#{@utensil.actable_type.underscore}")), utensil_path(@utensil), method: :delete, data: { confirm: t("material_category.edit.destroy_confirmation", category: t("material_category.categories.#{@utensil.actable_type.underscore}"), description: @utensil.name_with_description)}, class: "btn btn-danger"

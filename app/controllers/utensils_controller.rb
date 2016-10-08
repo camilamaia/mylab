@@ -8,7 +8,7 @@ class UtensilsController < ApplicationController
   end
 
   def create
-    @utensil = Utensil.new(utensil_params)
+    @utensil             = Utensil.new(utensil_params)
     @utensil.description = @utensil.friendly_description utensil_params
 
     if @utensil.save
@@ -23,7 +23,7 @@ class UtensilsController < ApplicationController
   end
 
   def update
-    @utensil = Utensil.find(params[:id])
+    @utensil             = Utensil.find(params[:id])
     @utensil.description = @utensil.friendly_description utensil_params
 
     if @utensil.update(utensil_params)

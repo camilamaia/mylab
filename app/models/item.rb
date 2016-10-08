@@ -5,7 +5,11 @@ class Item < ActiveRecord::Base
   belongs_to :material
 
   def material_type
-    self.material.actable_type
+    self.material ? self.material.actable_type : self.actable_type.split("Item").second
+  end
+
+  def full_description
+    "#{self.material.name_with_description} - #{self.description}"
   end
 
   def friendly_description all_attributes

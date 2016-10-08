@@ -1,0 +1,17 @@
+pt-BR:
+  material_category:
+    categories:
+      utensil: "Utensílio"
+    edit:
+      title: "%{category}"
+      destroy: "Excluir %{category}"
+      destroy_alert: "Depois de excluir um %{category} do seu estoque, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!"
+      destroy_confirmation: "Você tem certeza que deseja excluir o %{category} '%{description}'? Com esta ação, todos os dados deste %{category} serão perdidos"
+    new:
+      title: "Adicionar %{category}"
+    show:
+      title: "Material"
+      subtitle: "%{category} %{id}"
+      name: "Nome"
+      code: "Código"
+      quantity: "Quantidade"

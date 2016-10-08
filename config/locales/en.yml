@@ -1,22 +1,8 @@
 en:
-  editing_material: Editing Material
-  new_material: New Material
-  back: Back
-  edit: Edit
-  identification_number: Identification Number
-
-  simple_form:
-    labels:
-      material:
-        name: Name
-        formula: Formula
-
-  enumerize:
-    material:
-      kind:
-        durable: Durable
-        not_durable: Not Durable
-
+  cancel: "Cancel"
+  show: "Show"
+  edit: "Edit"
+  back: "Back"
   date:
     abbr_day_names:
     - Sun
@@ -157,9 +143,9 @@ en:
     select:
       prompt: Please select
     submit:
-      create: Create %{model}
-      submit: Save %{model}
-      update: Update %{model}
+      create: Create
+      submit: Save
+      update: Update
   number:
     currency:
       format:

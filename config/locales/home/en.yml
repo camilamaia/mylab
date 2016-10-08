@@ -1,0 +1,16 @@
+en:
+  home:
+    index:
+      welcome: "Welcome to %{lab_name}"
+      edit: "Edit"
+      new_stock: "New Stock"
+      alerts: "Alerts"
+      materials_catalog: "Materials Catalog"
+      no_description: "No description"
+      add_description: "Add Description"
+      responsible: "Responsible %{responsible}"
+      access: "Access"
+      no_stocks: "No registered stocks"
+      no_labs: "Oops! There is no registered laboratories yet. Ask a coworker to add you in one of his/her labs, or create yours here!"
+      new_lab: "New Laboratory"
+

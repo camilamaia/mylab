@@ -1,0 +1,8 @@
+en:
+  item:
+    index:
+      new_item: "New Item"
+      utensil: "Utensil"
+      code: "Code"
+      category: "Category"
+      description: "Description"

@@ -1,12 +1,11 @@
 .page-header
-  h1 #{t(:editing_laboratory)}
+  h3 = t('lab.edit.title')
 
 = render 'form'
 
 .page-header
-  h3 #{t(:destroy_laboratory)}
+  h3 = t('lab.edit.destroy')
 
-p
-  | Depois de excluir um laboratório, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!
+p = t('lab.edit.destroy_alert')
 
-= link_to "Excluir Estoque", stock_path(@laboratory), method: :delete, data: { confirm: 'Você tem certeza que deseja remover o laboratório ' + @laboratory.name + '? Com esta ação, todos os dados deste estoque serão perdidos.'}, class: "btn btn-danger"
+= link_to t('lab.edit.destroy'), laboratory_path(@laboratory), method: :delete, data: { confirm: t('lab.edit.destroy_confirmation', lab_name: @laboratory.name)}, class: "btn btn-danger"
