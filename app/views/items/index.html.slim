@@ -11,7 +11,7 @@
               span = t("item.index.utensil")
 
 .table-responsive
-  table.table.table-inverse
+  table.table.table-striped
     thead
       tr
         th = t("item.index.code")
@@ -19,8 +19,8 @@
         th = t("item.index.description")
         th
         th
-    - @items.each do |item|
-      tbody
+    tbody
+      - @items.each do |item|
         tr
           td.col-md-1= item.id
           td.col-md-1= t("item.index.#{item.material_type.underscore}")

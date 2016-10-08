@@ -1,22 +1,23 @@
 .page-header
   h3= t("material_category.show.title")
 
-.col-md-4
+.col-md-6
   .table-responsive
-    table.table.table-striped
+    table.table.table-striped.table-show
       thead
         tr
-          th colspan="2" = t("material_category.show.subtitle", category: t("material_category.categories.#{@utensil.actable_type.underscore}"), id: @utensil.id)
+          th
+          th = t("material_category.show.subtitle", category: t("material_category.categories.#{@utensil.actable_type.underscore}"), id: @utensil.id)
       tbody
         tr
-          td = t("material_category.show.name")
-          td= @utensil.name
+          td.col-md-4 = t("material_category.show.name")
+          td.col-md-8= @utensil.name
         tr
-          td = t("material_category.show.code")
-          td= @utensil.ufsc_id
+          td.col-md-4 = t("material_category.show.code")
+          td.col-md-8= @utensil.ufsc_id
         tr
-          td = t("material_category.show.quantity")
-          td= @utensil.quantity
+          td.col-md-4 = t("material_category.show.quantity")
+          td.col-md-8 = @utensil.quantity
 
 .col-md-12
   = link_to t(:back), :materials, {:class=>"btn btn-default"}
