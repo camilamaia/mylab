@@ -46,11 +46,11 @@ ActiveRecord::Schema.define(version: 20161004141527) do
 
   create_table "materials", force: true do |t|
     t.string   "name"
-    t.text     "description"
-    t.integer  "actable_id"
-    t.string   "actable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description",  null: false
+    t.integer  "actable_id"
+    t.string   "actable_type"
   end
 
   create_table "stocks", force: true do |t|
