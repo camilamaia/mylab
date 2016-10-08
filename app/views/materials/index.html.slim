@@ -11,7 +11,7 @@
               span = t("material.index.utensil")
 
 .table-responsive
-  table.table
+  table.table.table-striped
     thead
       tr
         th = t("material.index.code")
@@ -19,8 +19,8 @@
         th = t("material.index.description")
         th
         th
-    - @materials.each do |material|
-      tbody
+    tbody
+      - @materials.each do |material|
         tr
           td.col-md-1= material.id
           td.col-md-1= material.name
