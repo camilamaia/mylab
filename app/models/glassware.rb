@@ -11,7 +11,7 @@ class Glassware < ActiveRecord::Base
       begin
         Unit.new(self.capacity).convert_to('ml')
       rescue
-        errors.add(:capacity, 'capacidade deve ser uma unidade de volume. Ex: 100ml, 100l')
+        errors.add(:capacity, 'capacidade deve ser uma unidade de volume. Ex: 100mL, 100L')
       end
     end
   end

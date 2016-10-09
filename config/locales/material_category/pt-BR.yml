@@ -11,9 +11,8 @@ pt-BR:
     new:
       title: "Adicionar %{category}"
     show:
-      title: "Material"
-      subtitle: "%{category} - COD %{id}"
+      subtitle: "%{category}"
       name: "Nome"
-      code: "Código"
+      ufsc_code: "Código UFSC"
       quantity: "Quantidade"
       capacity: "Capacidade"

@@ -1,5 +1,5 @@
 .page-header
-  h3= t("material_category.show.title")
+  h3 = t("material_category.show.subtitle", category: t("material_category.categories.#{@utensil.actable_type.underscore}"))
 
 .col-md-6
   .table-responsive
@@ -7,13 +7,10 @@
       thead
         tr
           th
-          th = t("material_category.show.subtitle", category: t("material_category.categories.#{@utensil.actable_type.underscore}"), id: @utensil.id)
+          th = @utensil.name
       tbody
         tr
-          td.col-md-4 = t("material_category.show.name")
-          td.col-md-8= @utensil.name
-        tr
-          td.col-md-4 = t("material_category.show.code")
+          td.col-md-4 = t("material_category.show.ufsc_code")
           td.col-md-8= @utensil.ufsc_id
         tr
           td.col-md-4 = t("material_category.show.quantity")

@@ -4,6 +4,10 @@ class Item < ActiveRecord::Base
   belongs_to :stock
   belongs_to :material
 
+  def item_id
+    self.id
+  end
+
   def material_type
     self.material ? self.material.actable_type : self.actable_type.split("Item").second
   end

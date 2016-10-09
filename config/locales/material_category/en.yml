@@ -11,9 +11,8 @@ en:
     new:
       title: "Add %{category}"
     show:
-      title: "Material"
-      subtitle: "%{category} - CODE %{id}"
+      subtitle: "%{category}"
       name: "Name"
-      code: "Code"
+      ufsc_code: "UFSC Code"
       quantity: "Quantity"
       capacity: "Capacity"

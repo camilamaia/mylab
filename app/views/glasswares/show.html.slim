@@ -1,7 +1,7 @@
 p#notice = notice
 
 .page-header
-  h3= t("material_category.show.title")
+  h3 = t("material_category.show.subtitle", category: t("material_category.categories.#{@glassware.actable_type.underscore}"))
 
 .col-md-6
   .table-responsive
@@ -9,13 +9,10 @@ p#notice = notice
       thead
         tr
           th
-          th = t("material_category.show.subtitle", category: t("material_category.categories.#{@glassware.actable_type.underscore}"), id: @glassware.id)
+          th = @glassware.name
       tbody
         tr
-          td.col-md-4 = t("material_category.show.name")
-          td.col-md-8= @glassware.name
-        tr
-          td.col-md-4 = t("material_category.show.code")
+          td.col-md-4 = t("material_category.show.ufsc_code")
           td.col-md-8= @glassware.ufsc_id
         tr
           td.col-md-4 = t("material_category.show.capacity")
