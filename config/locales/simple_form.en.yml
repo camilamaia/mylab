@@ -15,8 +15,10 @@ en:
         name: 'Name'
         description: 'Description'
         material: 'Material'
+        quantity: 'Quantidade'
         current_quantity: 'Current Quantity'
         responsible: 'Responsible'
         ufsc_id: 'UFSC code'
+        capacity: 'Capacity'
     helpers:
       submit: "Save"

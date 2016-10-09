@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161007173347) do
+ActiveRecord::Schema.define(version: 20161009015409) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "glasswares", force: true do |t|
+    t.integer "ufsc_id"
+    t.string  "capacity"
+    t.integer "quantity"
+  end
+
+  create_table "item_glasswares", force: true do |t|
+    t.string "current_quantity"
+  end
 
   create_table "item_utensils", force: true do |t|
     t.integer "current_quantity"
@@ -46,11 +56,11 @@ ActiveRecord::Schema.define(version: 20161007173347) do
 
   create_table "materials", force: true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.text     "description",  null: false
+    t.text     "description"
     t.integer  "actable_id"
     t.string   "actable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "stocks", force: true do |t|

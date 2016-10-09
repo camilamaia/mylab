@@ -2,6 +2,7 @@ pt-BR:
   material_category:
     categories:
       utensil: "Utensílio"
+      glassware: "Vidraria"
     edit:
       title: "%{category}"
       destroy: "Excluir %{category}"
@@ -11,7 +12,8 @@ pt-BR:
       title: "Adicionar %{category}"
     show:
       title: "Material"
-      subtitle: "%{category} %{id}"
+      subtitle: "%{category} - COD %{id}"
       name: "Nome"
       code: "Código"
       quantity: "Quantidade"
+      capacity: "Capacidade"

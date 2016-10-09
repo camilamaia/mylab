@@ -3,6 +3,7 @@ en:
     index:
       new_item: "New Item"
       utensil: "Utensil"
+      glassware: "Glassware"
       code: "Code"
       category: "Category"
       description: "Description"

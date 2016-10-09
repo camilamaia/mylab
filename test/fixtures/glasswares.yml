@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ufsc_id: 1
+  capacity: MyString
+  quantity: 1
+
+two:
+  ufsc_id: 1
+  capacity: MyString
+  quantity: 1

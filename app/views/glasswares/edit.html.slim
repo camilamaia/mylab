@@ -1,0 +1,11 @@
+.page-header
+  h3 = t("material_category.edit.title", category: t("material_category.categories.#{@glassware.actable_type.underscore}"))
+
+= render 'form'
+
+.page-header
+  h3 = t("material_category.edit.destroy", category: t("material_category.categories.#{@glassware.actable_type.underscore}"))
+
+p = t("material_category.edit.destroy_alert", category: t("material_category.categories.#{@glassware.actable_type.underscore}"))
+
+= link_to t("material_category.edit.destroy", category: t("material_category.categories.#{@glassware.actable_type.underscore}")), glassware_path(@glassware), method: :delete, data: { confirm: t("material_category.edit.destroy_confirmation", category: t("material_category.categories.#{@glassware.actable_type.underscore}"), description: @glassware.name_with_description)}, class: "btn btn-danger"

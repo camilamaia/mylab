@@ -2,6 +2,7 @@ en:
   material_category:
     categories:
       utensil: "Utensil"
+      glassware: "Glassware"
     edit:
       title: "%{category}"
       destroy: "Destroy %{category}"
@@ -11,7 +12,8 @@ en:
       title: "Add %{category}"
     show:
       title: "Material"
-      subtitle: "%{category} %{id}"
+      subtitle: "%{category} - CODE %{id}"
       name: "Name"
       code: "Code"
       quantity: "Quantity"
+      capacity: "Capacity"

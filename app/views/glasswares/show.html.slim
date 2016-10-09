@@ -1,0 +1,30 @@
+p#notice = notice
+
+.page-header
+  h3= t("material_category.show.title")
+
+.col-md-6
+  .table-responsive
+    table.table.table-striped.table-show
+      thead
+        tr
+          th
+          th = t("material_category.show.subtitle", category: t("material_category.categories.#{@glassware.actable_type.underscore}"), id: @glassware.id)
+      tbody
+        tr
+          td.col-md-4 = t("material_category.show.name")
+          td.col-md-8= @glassware.name
+        tr
+          td.col-md-4 = t("material_category.show.code")
+          td.col-md-8= @glassware.ufsc_id
+        tr
+          td.col-md-4 = t("material_category.show.capacity")
+          td.col-md-8 = @glassware.capacity
+        tr
+          td.col-md-4 = t("material_category.show.quantity")
+          td.col-md-8 = @glassware.quantity
+
+.col-md-12
+  = link_to t(:back), :materials, {:class=>"btn btn-default"}
+  = link_to t(:edit), edit_glassware_path(@glassware), {:class=>"btn btn-default"}
+

@@ -4,6 +4,10 @@ class Material < ActiveRecord::Base
   validates :name, presence: true
   validates :description, presence: true, uniqueness: true
 
+  def material_id
+    self.id
+  end
+
   def friendly_description all_attributes
     all_attributes.except('name').reduce('') do |description, (attr_name, attr_value)|
       description + attr_friendly_description(attr_name, attr_value) + ', '
@@ -16,6 +20,8 @@ class Material < ActiveRecord::Base
       "código ufsc: #{value}"
     when 'quantity'
       "#{value} un"
+    when 'capacity'
+      "capacidade #{value}"
     else
       "#{name} #{value}"
     end

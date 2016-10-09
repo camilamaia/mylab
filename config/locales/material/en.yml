@@ -4,6 +4,7 @@ en:
       title: "Materials Catalog"
       new_material: "New Material"
       utensil: "Utensil"
+      glassware: "Glassware"
       code: "Code"
       name: "Name"
       description: "Description"

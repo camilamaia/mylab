@@ -9,6 +9,9 @@
           li.text-right
             = link_to new_utensil_path
               span = t("material.index.utensil")
+          li.text-right
+            = link_to new_glassware_path
+              span = t("material.index.glassware")
 
 .table-responsive
   table.table.table-striped
@@ -20,10 +23,10 @@
         th
         th
     tbody
-      - @materials.each do |material|
+      - @materials.order(:id).each do |material|
         tr
           td.col-md-1= material.id
           td.col-md-1= material.name
           td.col-md-8= material.description
-          td.col-md-1= link_to t(:show), send(material.route_path, material)
-          td.col-md-1= link_to t(:edit), send(material.edit_path, material)
+          td.col-md-1= link_to t(:show), send(material.route_path, material.actable_id)
+          td.col-md-1= link_to t(:edit), send(material.edit_path, material.actable_id)

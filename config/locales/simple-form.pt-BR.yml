@@ -15,8 +15,10 @@ pt-BR:
         name: 'Nome'
         description: 'Descrição'
         material: 'Material'
+        quantity: 'Quantidade'
         current_quantity: 'Quantidade atual'
         responsible: 'Responsável'
         ufsc_id: 'Código UFSC'
+        capacity: 'Capacidade'
     helpers:
       submit: 'Salvar'

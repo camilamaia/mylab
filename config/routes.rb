@@ -4,9 +4,11 @@ Mylab::Application.routes.draw do
 
   resources :materials
   resources :utensils
+  resources :glasswares
 
   resources :items
   resources :item_utensils
+  resources :item_glasswares
 
   root 'home#index', :as => :home
   get 'generate_xls', to: "home#generate_xls"

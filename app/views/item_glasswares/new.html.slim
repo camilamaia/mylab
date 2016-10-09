@@ -1,0 +1,6 @@
+h3 = @stock.name
+
+.page-header
+  h3 = t("item_category.new.title", category: t("item_category.categories.#{@item_glassware.material_type.underscore}"))
+
+= render 'form'

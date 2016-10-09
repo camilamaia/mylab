@@ -9,6 +9,9 @@
           li.text-right
             = link_to new_item_utensil_path({stock: @stock})
               span = t("item.index.utensil")
+          li.text-right
+            = link_to new_item_glassware_path({stock: @stock})
+              span = t("item.index.glassware")
 
 .table-responsive
   table.table.table-striped
@@ -20,10 +23,10 @@
         th
         th
     tbody
-      - @items.each do |item|
+      - @items.order(:id).each do |item|
         tr
           td.col-md-1= item.id
           td.col-md-1= t("item.index.#{item.material_type.underscore}")
           td.col-md-4= item.full_description
-          td.col-md-1= link_to t(:show), send(item.route_path, {id: item.id, :stock => @stock.id})
-          td.col-md-1= link_to t(:edit), send(item.edit_path, {id: item.id, :stock => @stock.id})
+          td.col-md-1= link_to t(:show), send(item.route_path, {id: item.actable_id, :stock => @stock.id})
+          td.col-md-1= link_to t(:edit), send(item.edit_path, {id: item.actable_id, :stock => @stock.id})
