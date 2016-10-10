@@ -11,19 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161009015409) do
+ActiveRecord::Schema.define(version: 20161010143540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "glasswares", force: true do |t|
-    t.integer "ufsc_id"
+    t.string  "ufsc_id",  limit: 1000
     t.string  "capacity"
     t.integer "quantity"
   end
 
   create_table "item_glasswares", force: true do |t|
     t.string "current_quantity"
+  end
+
+  create_table "item_standard_solutions", force: true do |t|
+    t.date "shelf_life"
   end
 
   create_table "item_utensils", force: true do |t|
@@ -63,6 +67,10 @@ ActiveRecord::Schema.define(version: 20161009015409) do
     t.datetime "updated_at"
   end
 
+  create_table "standard_solutions", force: true do |t|
+    t.string "concentration"
+  end
+
   create_table "stocks", force: true do |t|
     t.string   "name"
     t.text     "description"
@@ -98,7 +106,7 @@ ActiveRecord::Schema.define(version: 20161009015409) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "utensils", force: true do |t|
-    t.integer "ufsc_id"
+    t.string  "ufsc_id",  limit: 1000
     t.integer "quantity"
   end
 

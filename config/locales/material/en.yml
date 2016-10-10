@@ -5,7 +5,8 @@ en:
       new_material: "New Material"
       utensil: "Utensil"
       glassware: "Glassware"
-      code: "Code"
+      standard_solution: "Standard Solution"
       name: "Name"
       description: "Description"
+      no_materials: "No registered materials"
 

@@ -5,7 +5,8 @@ pt-BR:
       new_material: "Novo Material"
       utensil: "Utensílio"
       glassware: "Vidraria"
-      code: "Código"
+      standard_solution: "Padrão"
       name: "Nome"
       description: "Descrição"
+      no_materials: "Não há materiais registrados"
 

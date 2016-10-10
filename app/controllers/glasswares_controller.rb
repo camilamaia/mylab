@@ -39,7 +39,7 @@ class GlasswaresController < ApplicationController
     @glassware = Glassware.find(params[:id])
     @glassware.destroy
 
-    redirect_to glasswares_path
+    redirect_to materials_path
   end
 
   private

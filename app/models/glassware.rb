@@ -4,10 +4,10 @@ class Glassware < ActiveRecord::Base
   validates :ufsc_id, presence: true, uniqueness: true
   validates :quantity, presence: true
 
-  validate :capacity_volume
+  validate :capacity_unit
 
-  def capacity_volume
-    if self.capacity
+  def capacity_unit
+    if self.capacity && !self.capacity.blank?
       begin
         Unit.new(self.capacity).convert_to('ml')
       rescue

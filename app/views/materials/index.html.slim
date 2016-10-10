@@ -1,3 +1,7 @@
+= link_to home_path({stock: @stock})
+  i.fa.fa-chevron-circle-left
+  span = t(:back)
+
 .row
     .col-md-9
       h3 = t("material.index.title")
@@ -9,24 +13,37 @@
           li.text-right
             = link_to new_utensil_path
               span = t("material.index.utensil")
+          li.divider[role="separator"]
           li.text-right
             = link_to new_glassware_path
               span = t("material.index.glassware")
+          li.divider[role="separator"]
+          li.text-right
+            = link_to new_standard_solution_path
+              span = t("material.index.standard_solution")
 
-.table-responsive
-  table.table.table-striped
-    thead
-      tr
-        th = t("material.index.code")
-        th = t("material.index.name")
-        th = t("material.index.description")
-        th
-        th
-    tbody
-      - @materials.order(:id).each do |material|
+- if @materials.size > 0
+  .table-responsive
+    table.table.table-striped
+      thead
         tr
-          td.col-md-1= material.id
-          td.col-md-1= material.name
-          td.col-md-8= material.description
-          td.col-md-1= link_to t(:show), send(material.route_path, material.actable_id)
-          td.col-md-1= link_to t(:edit), send(material.edit_path, material.actable_id)
+          th = t("material.index.name")
+          th = t("item.index.category")
+          th = t("material.index.description")
+          th
+          th
+      tbody
+        - @materials.order(:id).each do |material|
+          tr
+            td.col-md-1= material.name
+            td.col-md-1= t("material.index.#{material.actable_type.underscore}")
+            td.col-md-8= material.description
+            td.col-md-1= link_to t(:show), send(material.route_path, material.actable_id)
+            td.col-md-1= link_to t(:edit), send(material.edit_path, material.actable_id)
+
+- else
+  h3.text-center = t('material.index.no_materials')
+
+= link_to home_path({stock: @stock})
+  i.fa.fa-chevron-circle-left
+  span = t(:back)

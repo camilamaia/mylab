@@ -12,8 +12,6 @@ class ItemGlasswaresController < ApplicationController
   end
 
   def create
-    ap "params"
-    ap params
     @item_glassware             = ItemGlassware.new(item_glassware_params)
     @item_glassware.description = @item_glassware.friendly_description item_glassware_params
     @stock                      = Stock.find params[:stock]

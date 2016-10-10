@@ -3,6 +3,7 @@ pt-BR:
     categories:
       utensil: "Utensílio"
       glassware: "Vidraria"
+      standard_solution: "Padrão"
     edit:
       title: "%{category}"
       destroy: "Excluir %{category}"
@@ -16,3 +17,4 @@ pt-BR:
       ufsc_code: "Código UFSC"
       quantity: "Quantidade"
       capacity: "Capacidade"
+      concentration: "Concentração"

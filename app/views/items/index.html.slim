@@ -1,3 +1,6 @@
+= link_to home_path({stock: @stock})
+  i.fa.fa-chevron-circle-left
+  span = t(:back)
 .row
     .col-md-9
       h3 = @stock.name
@@ -9,24 +12,36 @@
           li.text-right
             = link_to new_item_utensil_path({stock: @stock})
               span = t("item.index.utensil")
+          li.divider[role="separator"]
           li.text-right
             = link_to new_item_glassware_path({stock: @stock})
               span = t("item.index.glassware")
+          li.divider[role="separator"]
+          li.text-right
+            = link_to new_item_standard_solution_path({stock: @stock})
+              span = t("item.index.standard_solution")
 
-.table-responsive
-  table.table.table-striped
-    thead
-      tr
-        th = t("item.index.code")
-        th = t("item.index.category")
-        th = t("item.index.description")
-        th
-        th
-    tbody
-      - @items.order(:id).each do |item|
+- if @items.size > 0
+  .table-responsive
+    table.table.table-striped
+      thead
         tr
-          td.col-md-1= item.id
-          td.col-md-1= t("item.index.#{item.material_type.underscore}")
-          td.col-md-4= item.full_description
-          td.col-md-1= link_to t(:show), send(item.route_path, {id: item.actable_id, :stock => @stock.id})
-          td.col-md-1= link_to t(:edit), send(item.edit_path, {id: item.actable_id, :stock => @stock.id})
+          th = t("item.index.code")
+          th = t("item.index.category")
+          th = t("item.index.description")
+          th
+          th
+      tbody
+        - @items.order(:id).each do |item|
+          tr
+            td.col-md-1= item.id
+            td.col-md-1= t("item.index.#{item.material_type.underscore}")
+            td.col-md-4= item.full_description
+            td.col-md-1= link_to t(:show), send(item.route_path, {id: item.actable_id, :stock => @stock.id})
+            td.col-md-1= link_to t(:edit), send(item.edit_path, {id: item.actable_id, :stock => @stock.id})
+- else
+  h3.text-center = t('item.index.no_items')
+
+= link_to home_path({stock: @stock})
+  i.fa.fa-chevron-circle-left
+  span = t(:back)

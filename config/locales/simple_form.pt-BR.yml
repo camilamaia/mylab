@@ -20,5 +20,7 @@ pt-BR:
         responsible: 'Responsável'
         ufsc_id: 'Código UFSC'
         capacity: 'Capacidade'
+        concentration: 'Concentração'
+        shelf_life: 'Validade'
     helpers:
       submit: 'Salvar'

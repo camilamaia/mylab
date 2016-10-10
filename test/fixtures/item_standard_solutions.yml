@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shelf_life: 2016-10-09 20:52:17
+
+two:
+  shelf_life: 2016-10-09 20:52:17

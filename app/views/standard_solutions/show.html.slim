@@ -1,0 +1,21 @@
+p#notice = notice
+
+.page-header
+  h3 = t("material_category.show.subtitle", category: t("material_category.categories.#{@standard_solution.actable_type.underscore}"))
+
+.col-md-6
+  .table-responsive
+    table.table.table-striped.table-show
+      thead
+        tr
+          th
+          th = @standard_solution.name
+      tbody
+        tr
+          td.col-md-4 = t("material_category.show.concentration")
+          td.col-md-8= @standard_solution.concentration
+
+.col-md-12
+  = link_to t(:back), :materials, {:class=>"btn btn-default"}
+  = link_to t(:edit), edit_standard_solution_path(@standard_solution), {:class=>"btn btn-default"}
+

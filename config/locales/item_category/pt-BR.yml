@@ -3,6 +3,7 @@ pt-BR:
     categories:
       utensil: "Utensílio"
       glassware: "Vidraria"
+      standard_solution: "Padrão"
     edit:
       title: "%{category} - COD %{id}"
       remove: "Remover %{category}"

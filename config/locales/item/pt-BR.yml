@@ -4,6 +4,8 @@ pt-BR:
       new_item: "Novo Item"
       utensil: "Utensílio"
       glassware: "Vidraria"
+      standard_solution: "Padrão"
       code: "Código"
       category: "Categoria"
       description: "Descrição"
+      no_items: "Não há itens registrados"

@@ -4,6 +4,8 @@ en:
       new_item: "New Item"
       utensil: "Utensil"
       glassware: "Glassware"
+      standard_solution: "Standard Solution"
       code: "Code"
       category: "Category"
       description: "Description"
+      no_items: "No registered items"

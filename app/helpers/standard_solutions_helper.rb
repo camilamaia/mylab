@@ -1,0 +1,2 @@
+module StandardSolutionsHelper
+end
