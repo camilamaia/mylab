@@ -2,7 +2,7 @@ class Stock < ActiveRecord::Base
   belongs_to :responsible, :class_name => 'User', :foreign_key => 'user_id'
   belongs_to :laboratory
 
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true
   validates :responsible, presence: true
   validates :laboratory, presence: true
   validate :user_belongs_to_lab
