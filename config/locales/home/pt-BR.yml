@@ -6,7 +6,6 @@ pt-BR:
       new_stock: "Novo Estoque"
       alerts: "Alertas"
       materials_catalog: "Catálogo de Materiais"
-      no_description: "Sem descrição"
       add_description: "Adicionar descrição"
       responsible: "Responsável %{responsible}"
       access: "Acessar"

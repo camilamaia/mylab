@@ -35,6 +35,28 @@
 
 .lab_info {
   margin: 0;
+  margin-top: 30px;
+}
+
+.newstock {
+  margin-top: 50px;
+}
+
+p.description {
+  color: #bfd9ff;
+  font-size: 17px;
+  margin-top: 11px;
+  margin-right: 10px;
+  float: left;
+}
+
+p.edit a {
+  color: #4aaaa5;
+  margin: 14px 0;
+}
+
+p.edit {
+  margin: 14px 0;
 }
 
 .catalog {
@@ -43,7 +65,7 @@
 }
 
 .jumbotron, .container .jumbotron {
-    padding-left: 10%;
+    padding-left: 6%;
     padding-right: 10%;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -51,13 +73,22 @@
     margin-top: 10vh;
     color: #35404f;
     border-radius: 15px;
+    text-align: center;
 
     p {
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: normal;
     }
 
     a.btn {
-      margin-left: 20%;
       background: #960909;
     }
+
+    h3 {
+      color: #960909;
+    }
+}
+
+.jumbotron-wrapper {
+  margin-left: 8%;
 }

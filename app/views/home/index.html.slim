@@ -2,14 +2,16 @@
   .row
     .col-md-9
       h2.lab_info = t('home.index.welcome', lab_name: current_lab.name)
-      p = current_lab.description
-      p = link_to t('home.index.edit'), edit_laboratory_path(current_lab)
-    .col-md-3.text-right
+      p.description = current_lab.description
+      p.edit
+        = link_to edit_laboratory_path(current_lab), :class => 'pencil'
+          i.fa.fa-pencil aria-hidden="true"
+    .col-md-3.text-right.newstock
       = link_to new_stock_path
         i.fa.fa-plus-circle.fa-3x.pull-right.new-stock aria-hidden="true"
         h4= t('home.index.new_stock')
   - if @stocks.size > 0
-    .col-md-4
+    .col-md-4.jumbotron-wrapper
       .jumbotron
         h3 = t('home.index.alerts')
         p Há materiais com validade próxima ao vencimento.
@@ -19,26 +21,23 @@
         = link_to materials_path
           i.fa.fa-book.fa-3x
           h3= t('home.index.materials_catalog')
-    .col-md-8.stocks-container
+    .col-md-7.stocks-container.pull-right
       ul
         - @stocks.order(:id).each do |stock|
           li
-            h3
-              = stock.name
-            .panel.panel-default
-              .panel-body
-                = link_to edit_stock_path(stock)
-                  i.fa.fa-pencil.pull-right aria-hidden="true"
-                - if stock.description.size > 0
-                  = stock.description
-                - else
-                  = t('home.index.no_description')
-                = link_to edit_stock_path(stock)
+            .bs-callout
+              h4 = stock.name
+              = link_to edit_stock_path(stock), :class => 'pencil'
+                i.fa.fa-pencil.pull-right aria-hidden="true"
+              - if stock.description.size > 0
+                p = stock.description
+              - else
+                p = link_to edit_stock_path(stock)
                   = t('home.index.add_description')
-              .panel-footer.text-right
-                = t('home.index.responsible', responsible: stock.responsible.name)
-              = link_to t('home.index.access'), items_path(:stock => stock), :class => 'btn btn-default col-md-12'
-
+              p.pull-left = t('home.index.responsible', responsible: stock.responsible.name)
+              = link_to items_path(:stock => stock), :class =>'access pull-right'
+                span = t('home.index.access').upcase
+                i.fa.fa-arrow-circle-right.pull-right aria-hidden="true"
   - else
     h4 = t('home.index.no_stocks')
 

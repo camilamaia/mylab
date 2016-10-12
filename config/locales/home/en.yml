@@ -6,7 +6,6 @@ en:
       new_stock: "New Stock"
       alerts: "Alerts"
       materials_catalog: "Materials Catalog"
-      no_description: "No description"
       add_description: "Add Description"
       responsible: "Responsible %{responsible}"
       access: "Access"
