@@ -1,0 +1,2 @@
+module GlasswaresHelper
+end

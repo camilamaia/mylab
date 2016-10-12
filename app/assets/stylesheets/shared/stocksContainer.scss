@@ -3,11 +3,68 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .stocks-container {
-  margin-top: 5%;
-}
+  ul {
+    list-style: none;
+    max-height: 75vh;
+    overflow-y:scroll;
+    padding-left: 20%;
+  }
 
-.stocks-brand > img {
-  width: 40%;
-  height: 40%;
-  opacity: 0.3;
+  li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .bs-callout {
+    padding: 0 20px 20px 20px;
+    margin: 20px ;
+    border-left: 5px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 26px;
+  }
+  .bs-callout p:last-child {
+    margin-bottom: 0;
+  }
+  .bs-callout code {
+    border-radius: 3px;
+  }
+  .bs-callout+.bs-callout {
+    margin-top: -5px;
+  }
+  .bs-callout {
+    border-left-color: #fff;
+  }
+  .bs-callout h4 {
+    color: #bfd9ff;
+    float: left;
+  }
+
+  a {
+    color: #4aaaa5;
+  }
+
+  p {
+    clear: both;
+  }
+  a.access{
+    font-weight: 500;
+    color: white;
+    vertical-align: middle;
+  }
+  i {
+    color: #4aaaa5;
+    padding-top: 5px;
+  }
+
+  li {
+    margin-bottom: 65px;
+    margin-top: 40px;
+  }
+
 }

@@ -1,0 +1,7 @@
+= simple_form_for @utensil, html: {class: 'form-vertical' } do |f|
+  = f.error_notification
+  = f.input :name
+  = f.input :ufsc_id
+  = f.input :quantity
+  = f.submit class: 'btn btn-success'
+  = link_to 'Cancelar', :materials, {:class=>"btn btn-danger"}

@@ -1,0 +1,9 @@
+en:
+  stock:
+    edit:
+      title: "Edit Stock"
+      destroy: "Destroy Stock"
+      destroy_alert: "After removing a stock, there is no turning back. Please make absolutely sure of this action!"
+      destroy_confirmation: "Are you sure you want to destroy the stock '%{stock_name}'? With this action, all the data of this stock will be lost"
+    new:
+      title: "New Stock"

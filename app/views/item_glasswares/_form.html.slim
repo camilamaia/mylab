@@ -1,0 +1,9 @@
+= simple_form_for @item_glassware, html: {class: 'form-vertical' } do |f|
+  = f.error_notification
+  = f.label :material
+  .form-group
+    = f.collection_select :material_id, Glassware.all, :material_id, :name_with_description, prompt: :translate, :class=>"selectpicker"
+  = f.input :current_quantity
+  = hidden_field_tag :stock, @stock.id
+  = f.submit class: 'btn btn-success'
+  = link_to t(:cancel), items_path(:stock => @stock), :class=>"btn btn-danger"

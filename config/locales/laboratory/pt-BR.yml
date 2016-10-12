@@ -1,0 +1,9 @@
+pt-BR:
+  lab:
+    edit:
+      title: "Editar Laboratório"
+      destroy: "Excluir Laboratório"
+      destroy_alert: "Depois de excluir um laboratório, não há como voltar atrás. Por favor, tenha certeza absoluta desta ação!"
+      destroy_confirmation: "Você tem certeza que deseja excluir o laboratório '%{lab_name}'? Com esta ação, todos os dados deste laboratório serão perdidos"
+    new:
+      title: "Novo Laboratório"

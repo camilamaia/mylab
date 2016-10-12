@@ -1,0 +1,21 @@
+.page-header
+  h3 = t("material_category.show.subtitle", category: t("material_category.categories.#{@utensil.actable_type.underscore}"))
+
+.col-md-6
+  .table-responsive
+    table.table.table-striped.table-show
+      thead
+        tr
+          th
+          th = @utensil.name
+      tbody
+        tr
+          td.col-md-4 = t("material_category.show.ufsc_code")
+          td.col-md-8= @utensil.ufsc_id
+        tr
+          td.col-md-4 = t("material_category.show.quantity")
+          td.col-md-8 = @utensil.quantity
+
+.col-md-12
+  = link_to t(:back), :materials, {:class=>"btn btn-default"}
+  = link_to t(:edit), edit_utensil_path(@utensil), {:class=>"btn btn-default"}

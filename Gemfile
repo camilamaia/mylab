@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.6'
+gem 'rails', '4.1.16'
 
 # github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.6'
@@ -48,11 +48,18 @@ gem 'awesome_print', '~> 1.7.0'
 # https://github.com/bokmann/font-awesome-rails
 gem "font-awesome-rails", '~> 4.6.3.1'
 
+# https://github.com/hzamani/active_record-acts_as
+gem 'active_record-acts_as', '~> 1.0.8'
+
+# https://github.com/olbrich/ruby-units
+gem 'ruby-units', '~> 2.0.1'
+
 gem 'axlsx', '~> 2.0.1'
 
 gem 'sprockets', '3.6.3'
 
 gem 'puma'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

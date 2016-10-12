@@ -1,0 +1,25 @@
+p#notice = notice
+
+h3 = @stock.name
+.page-header
+  h3 = t("item_category.show.title", category: t("item_category.categories.#{@item_glassware.material_type.underscore}"), id: @item_glassware.item_id)
+
+.col-md-6
+  .table-responsive
+    table.table.table-striped.table-show.table-hover
+      thead
+        tr
+          th
+          th = @item_glassware.material.name
+      tbody.table-hover
+        tr
+          td.col-md-4 = t("item_category.categories.#{@item_glassware.material_type.underscore}")
+          td.col-md-8 = @item_glassware.material.description
+        tr
+          td.col-md-4 = t("item_category.show.current_quantity")
+          td.col-md-8 = @item_glassware.current_quantity
+
+.col-md-12
+  = link_to t(:back), items_path(:stock => @stock), :class=>"btn btn-default"
+  = link_to t(:edit), edit_item_glassware_path({id: @item_glassware.id, :stock => @stock.id}), {:class=>"btn btn-default"}
+

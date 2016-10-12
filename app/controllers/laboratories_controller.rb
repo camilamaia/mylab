@@ -12,12 +12,11 @@ class LaboratoriesController < ApplicationController
   end
 
   def create
-    @laboratory = Laboratory.new(laboratory_params)
+    @laboratory       = Laboratory.new(laboratory_params)
     @laboratory.owner = current_user
 
     if @laboratory.save
-      current_user.current_lab = @laboratory
-      current_user.save!
+      update_user_current_lab @laboratory
       redirect_to home_path
     else
       render 'new'
@@ -29,10 +28,10 @@ class LaboratoriesController < ApplicationController
   end
 
   def update
-    @laboratory = Laboratory.find(params[:id])
+    @laboratory                   = Laboratory.find(params[:id])
     params[:laboratory][:user_id] = current_user.id
 
-    if @laboratory.update(params[:laboratory].permit(:name, :description, :user_id))
+    if @laboratory.update(laboratory_params)
       redirect_to home_path
     else
       render 'edit'
@@ -47,12 +46,16 @@ class LaboratoriesController < ApplicationController
   end
 
   def update_current_lab
-    current_user.current_lab = Laboratory.find(params[:id])
-    current_user.save!
+    update_user_current_lab Laboratory.find(params[:id])
     redirect_to home_path
   end
 
   private
+
+  def update_user_current_lab lab
+    current_user.current_lab = lab
+    current_user.save!
+  end
 
   def laboratory_params
     params.require(:laboratory).permit(:name, :description, :user_id)

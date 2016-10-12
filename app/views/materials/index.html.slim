@@ -1,0 +1,32 @@
+.row
+    .col-md-9
+      h3 = t("material.index.title")
+    .col-md-3.text-right
+      .dropdown
+        a.dropdown-toggle id="newMaterialDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
+          h4 = t("material.index.new_material")
+        ul.dropdown-menu.pull-right aria-labelledby="newMaterialDropdownMenu"
+          li.text-right
+            = link_to new_utensil_path
+              span = t("material.index.utensil")
+          li.text-right
+            = link_to new_glassware_path
+              span = t("material.index.glassware")
+
+.table-responsive
+  table.table.table-striped
+    thead
+      tr
+        th = t("material.index.code")
+        th = t("material.index.name")
+        th = t("material.index.description")
+        th
+        th
+    tbody
+      - @materials.order(:id).each do |material|
+        tr
+          td.col-md-1= material.id
+          td.col-md-1= material.name
+          td.col-md-8= material.description
+          td.col-md-1= link_to t(:show), send(material.route_path, material.actable_id)
+          td.col-md-1= link_to t(:edit), send(material.edit_path, material.actable_id)

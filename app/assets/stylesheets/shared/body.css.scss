@@ -6,11 +6,21 @@ body {
   background-image: url("/assets/backleground.png");
   background-size: cover;
   color: white;
+
   a, a:hover {
     color: white;
     text-decoration: none;
   }
+
   .new-stock {
     color: #4aaaa5;
+  }
+
+  select {
+    color: #000;
+  }
+
+  .btn  {
+    margin-right: 2px;
   }
 }

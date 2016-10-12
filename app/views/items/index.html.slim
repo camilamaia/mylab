@@ -1,0 +1,32 @@
+.row
+    .col-md-9
+      h3 = @stock.name
+    .col-md-3.text-right
+      .dropdown
+        a.dropdown-toggle id="newMaterialDropdownMenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-no-turbolink="true"
+          h4 = t("item.index.new_item")
+        ul.dropdown-menu.pull-right aria-labelledby="newMaterialDropdownMenu"
+          li.text-right
+            = link_to new_item_utensil_path({stock: @stock})
+              span = t("item.index.utensil")
+          li.text-right
+            = link_to new_item_glassware_path({stock: @stock})
+              span = t("item.index.glassware")
+
+.table-responsive
+  table.table.table-striped
+    thead
+      tr
+        th = t("item.index.code")
+        th = t("item.index.category")
+        th = t("item.index.description")
+        th
+        th
+    tbody
+      - @items.order(:id).each do |item|
+        tr
+          td.col-md-1= item.id
+          td.col-md-1= t("item.index.#{item.material_type.underscore}")
+          td.col-md-4= item.full_description
+          td.col-md-1= link_to t(:show), send(item.route_path, {id: item.actable_id, :stock => @stock.id})
+          td.col-md-1= link_to t(:edit), send(item.edit_path, {id: item.actable_id, :stock => @stock.id})

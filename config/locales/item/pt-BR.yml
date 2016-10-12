@@ -1,0 +1,9 @@
+pt-BR:
+  item:
+    index:
+      new_item: "Novo Item"
+      utensil: "Utensílio"
+      glassware: "Vidraria"
+      code: "Código"
+      category: "Categoria"
+      description: "Descrição"
