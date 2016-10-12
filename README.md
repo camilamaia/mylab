@@ -48,7 +48,7 @@ To see the application running, you only need to open a web browser on localhost
  firefox http://localhost:3000
 ```
 
-## Deploy: Production
+## Deploy: Production Heroku
 
 From mylab directory, with your changes already pushed to git:
 ```
@@ -59,4 +59,10 @@ or, for a specific branch:
 
 ```
 $ git push heroku yourbranch:master
+```
+
+And, migrate it:
+
+```
+$ heroku run rake db:migrate
 ```
