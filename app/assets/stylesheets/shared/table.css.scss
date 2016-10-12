@@ -52,18 +52,10 @@
   padding: 4vh;
 }
 
-.table > tbody > tr > td:first-child {
-  text-align: center;
-}
-
 // Table Show
 
 .table-show > tbody > tr > td, .table-show > thead > tr > th {
   padding: 2vh;
-}
-
-.table-show > tbody > tr > td:first-child {
-  text-align: left;
 }
 
 .table-show > tbody > tr > td:last-child, .table-show > thead > tr > th:last-child {

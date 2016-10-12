@@ -3,6 +3,7 @@ en:
     categories:
       utensil: "Utensil"
       glassware: "Glassware"
+      standard_solution: "Standard Solution"
     edit:
       title: "%{category}"
       destroy: "Destroy %{category}"
@@ -16,3 +17,4 @@ en:
       ufsc_code: "UFSC Code"
       quantity: "Quantity"
       capacity: "Capacity"
+      concentration: "Concentration"

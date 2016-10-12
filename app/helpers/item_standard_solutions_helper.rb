@@ -1,0 +1,2 @@
+module ItemStandardSolutionsHelper
+end

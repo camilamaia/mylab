@@ -10,20 +10,25 @@ class Material < ActiveRecord::Base
 
   def friendly_description all_attributes
     all_attributes.except('name').reduce('') do |description, (attr_name, attr_value)|
-      description + attr_friendly_description(attr_name, attr_value) + ', '
+      unless attr_value.nil? || attr_value.empty?
+        description = description + attr_friendly_description(attr_name, attr_value)
+      end
+      description
     end.chomp(", ")
   end
 
   def attr_friendly_description name, value
     case name
     when 'ufsc_id'
-      "código ufsc: #{value}"
+      "código ufsc: #{value}, "
     when 'quantity'
-      "#{value} un"
+      "#{value} un, "
     when 'capacity'
-      "capacidade #{value}"
+      "capacidade #{value}, "
+    when 'concentration'
+      "concentração #{value}, "
     else
-      "#{name} #{value}"
+      "#{name} #{value}, "
     end
   end
 

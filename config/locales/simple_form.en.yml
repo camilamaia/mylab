@@ -20,5 +20,7 @@ en:
         responsible: 'Responsible'
         ufsc_id: 'UFSC code'
         capacity: 'Capacity'
+        concentration: 'Concentration'
+        shelf_life: 'Shelf Life'
     helpers:
       submit: "Save"

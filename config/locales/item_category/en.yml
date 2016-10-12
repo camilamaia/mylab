@@ -3,6 +3,7 @@ en:
     categories:
       utensil: "Utensil"
       glassware: "Glassware"
+      standard_solution: "Standard Solution"
     edit:
       title: "%{category} - CODE %{id}"
       remove: "Remove %{category}"

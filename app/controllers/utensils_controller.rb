@@ -37,7 +37,7 @@ class UtensilsController < ApplicationController
     @utensil = Utensil.find(params[:id])
     @utensil.destroy
 
-    redirect_to utensils_path
+    redirect_to materials_path
   end
 
   private
