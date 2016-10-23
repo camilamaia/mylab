@@ -1,0 +1,38 @@
+p#notice = notice
+
+h3 = @stock.name
+.page-header
+  h3 = t("item_category.show.title", category: t("item_category.categories.#{@item_reagent.material_type.underscore}"), id: @item_reagent.item_id)
+
+.col-md-6
+  .table-responsive
+    table.table.table-striped.table-show.table-hover
+      thead
+        tr
+          th
+          th = @item_reagent.material.name
+      tbody.table-hover
+        tr
+          td.col-md-4 = t("item_category.categories.#{@item_reagent.material_type.underscore}")
+          td.col-md-8 = @item_reagent.material.description
+        tr
+          td.col-md-4 = t("item_category.show.shelf_life")
+          td.col-md-8 = l(@item_reagent.shelf_life)
+        tr
+          td.col-md-4 = t("item_category.show.conservation")
+          td.col-md-8 = t("enumerize.item_reagent.conservation.#{@item_reagent.conservation}")
+
+        - if @item_reagent.reagent.physical_state.liquid?
+          tr
+            td.col-md-4 = t("item_category.show.current_volume")
+            td.col-md-8 = @item_reagent.current_volume
+
+        - if @item_reagent.reagent.physical_state.solid?
+          tr
+            td.col-md-4 = t("item_category.show.current_weight")
+            td.col-md-8 = @item_reagent.current_weight
+
+.col-md-12
+  = link_to t(:back), items_path(:stock => @stock), :class=>"btn btn-default"
+  = link_to t(:edit), edit_item_reagent_path({id: @item_reagent.id, :stock => @stock.id}), {:class=>"btn btn-default"}
+

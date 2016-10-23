@@ -1,0 +1,22 @@
+= simple_form_for @reagent, html: {class: 'form-vertical' }  do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :physical_state, disabled: true
+    = f.hidden_field :physical_state
+    = f.input :ufsc_id
+    = f.input :cas
+    = f.input :purity
+    = f.input :synonym
+    = f.input :brand
+
+    = f.input :volume if @reagent.physical_state.liquid?
+
+    - if @reagent.physical_state.solid?
+      = f.input :weight
+      = f.input :form, as: :radio_buttons
+
+  .form-actions
+    = f.submit class: 'btn btn-success'
+    = link_to 'Cancelar', :materials, {:class=>"btn btn-danger"}

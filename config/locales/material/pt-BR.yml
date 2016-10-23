@@ -1,12 +1,15 @@
 pt-BR:
   material:
     index:
-      title: "Catálogo de Materiais"
-      new_material: "Novo Material"
-      utensil: "Utensílio"
-      glassware: "Vidraria"
-      standard_solution: "Padrão"
-      name: "Nome"
-      description: "Descrição"
-      no_materials: "Não há materiais registrados"
+      title: 'Catálogo de Materiais'
+      new_material: 'Novo Material'
+      utensil: 'Utensílio'
+      glassware: 'Vidraria'
+      reagent: 'Reagente'
+      solid_reagent: 'Reagente Sólido'
+      liquid_reagent: 'Reagente Líquido'
+      standard_solution: 'Padrão'
+      name: 'Nome'
+      description: 'Descrição'
+      no_materials: 'Não há materiais registrados'
 

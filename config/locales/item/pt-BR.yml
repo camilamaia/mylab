@@ -1,11 +1,14 @@
 pt-BR:
   item:
     index:
-      new_item: "Novo Item"
-      utensil: "Utensílio"
-      glassware: "Vidraria"
-      standard_solution: "Padrão"
-      code: "Código"
-      category: "Categoria"
-      description: "Descrição"
-      no_items: "Não há itens registrados"
+      new_item: 'Novo Item'
+      utensil: 'Utensílio'
+      glassware: 'Vidraria'
+      solid_reagent: 'Reagente Sólido'
+      liquid_reagent: 'Reagente Líquido'
+      reagent: 'Reagente'
+      standard_solution: 'Padrão'
+      code: 'Código'
+      category: 'Categoria'
+      description: 'Descrição'
+      no_items: 'Não há itens registrados'

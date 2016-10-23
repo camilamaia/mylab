@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161010143540) do
+ActiveRecord::Schema.define(version: 20161023121755) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,13 @@ ActiveRecord::Schema.define(version: 20161010143540) do
 
   create_table "item_glasswares", force: true do |t|
     t.string "current_quantity"
+  end
+
+  create_table "item_reagents", force: true do |t|
+    t.date   "shelf_life"
+    t.string "conservation"
+    t.string "current_volume"
+    t.string "current_weight"
   end
 
   create_table "item_standard_solutions", force: true do |t|
@@ -60,11 +67,23 @@ ActiveRecord::Schema.define(version: 20161010143540) do
 
   create_table "materials", force: true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.text     "description",  null: false
+    t.text     "description"
     t.integer  "actable_id"
     t.string   "actable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "reagents", force: true do |t|
+    t.string "physical_state"
+    t.string "ufsc_id",        limit: 50
+    t.string "cas"
+    t.string "purity"
+    t.string "synonym"
+    t.string "brand"
+    t.string "volume"
+    t.string "weight"
+    t.string "form"
   end
 
   create_table "standard_solutions", force: true do |t|

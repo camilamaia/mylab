@@ -1,11 +1,14 @@
 en:
   item:
     index:
-      new_item: "New Item"
-      utensil: "Utensil"
-      glassware: "Glassware"
-      standard_solution: "Standard Solution"
-      code: "Code"
-      category: "Category"
-      description: "Description"
-      no_items: "No registered items"
+      new_item: 'New Item'
+      utensil: 'Utensil'
+      glassware: 'Glassware'
+      solid_reagent: 'Solid Reagent'
+      liquid_reagent: 'Liquid Reagent'
+      reagent: 'Reagent'
+      standard_solution: 'Standard Solution'
+      code: 'Code'
+      category: 'Category'
+      description: 'Description'
+      no_items: 'No registered items'

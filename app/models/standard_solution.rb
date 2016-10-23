@@ -10,7 +10,7 @@ class StandardSolution < ActiveRecord::Base
       begin
         Unit.new(self.concentration).convert_to('mg/l')
       rescue
-        errors.add(:concentration, 'Deve ser uma unidade de concentração. Ex: 100mg/L')
+        errors.add(:concentration, 'deve ser uma unidade de concentração. Ex: 100mg/L')
       end
     end
   end

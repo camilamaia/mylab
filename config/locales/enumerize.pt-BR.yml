@@ -1,0 +1,15 @@
+pt-BR:
+  enumerize:
+    reagent:
+      form:
+        powder: 'Pó'
+        bar: 'Barra'
+        tablet: 'Pastilha'
+      physical_state:
+        liquid: 'Líquido'
+        solid: 'Sólido'
+    item_reagent:
+      conservation:
+        bad: 'Ruim'
+        medium: 'Médio'
+        good: 'Bom'

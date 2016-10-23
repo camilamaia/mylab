@@ -1,0 +1,15 @@
+= simple_form_for @item_reagent, html: {class: 'form-vertical' } do |f|
+  = f.error_notification
+  = f.label :material
+  .form-group
+    = f.collection_select :material_id, Reagent.with_physical_state(@physical_state), :material_id, :name_with_description, prompt: :translate, :class=>"selectpicker"
+  = f.input :shelf_life
+  = f.input :conservation, as: :radio_buttons
+  = f.input :current_volume if @physical_state == 'liquid'
+  = f.input :current_weight if @physical_state == 'solid'
+  = hidden_field_tag :stock, @stock.id
+  = hidden_field_tag :physical_state, @physical_state
+
+  .form-actions
+    = f.submit class: 'btn btn-success'
+    = link_to t(:cancel), items_path(:stock => @stock), :class=>"btn btn-danger"

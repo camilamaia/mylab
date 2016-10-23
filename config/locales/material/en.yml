@@ -1,12 +1,15 @@
 en:
   material:
     index:
-      title: "Materials Catalog"
-      new_material: "New Material"
-      utensil: "Utensil"
-      glassware: "Glassware"
-      standard_solution: "Standard Solution"
-      name: "Name"
-      description: "Description"
-      no_materials: "No registered materials"
+      title: 'Materials Catalog'
+      new_material: 'New Material'
+      utensil: 'Utensil'
+      glassware: 'Glassware'
+      reagent: 'Reagent'
+      solid_reagent: 'Solid Reagent'
+      liquid_reagent: 'Liquid Reagent'
+      standard_solution: 'Standard Solution'
+      name: 'Name'
+      description: 'Description'
+      no_materials: 'No registered materials'
 

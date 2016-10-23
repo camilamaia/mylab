@@ -1,0 +1,13 @@
+h3 = @stock.name
+
+.page-header
+  h3 = t("item_category.edit.title", category: t("item_category.categories.#{@item_reagent.material_type.underscore}"), id: @item_reagent.id)
+
+= render 'form'
+
+.page-header
+  h3 = t("item_category.edit.remove", category: t("item_category.categories.#{@item_reagent.material_type.underscore}"))
+
+p = t("item_category.edit.remove_alert", category: t("item_category.categories.#{@item_reagent.material_type.underscore}"))
+
+= link_to t("item_category.edit.remove", category: t("item_category.categories.#{@item_reagent.material_type.underscore}")), item_reagent_path(@item_reagent, :stock => @stock), method: :delete, data: { confirm: t("item_category.edit.remove_confirmation", category: t("item_category.categories.#{@item_reagent.material_type.underscore}"), description: @item_reagent.full_description)}, class: "btn btn-danger"

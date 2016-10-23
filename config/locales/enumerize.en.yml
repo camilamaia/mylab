@@ -1,0 +1,15 @@
+en:
+  enumerize:
+    reagent:
+      form:
+        powder: 'Powder'
+        bar: 'Bar'
+        tablet: 'Tablet'
+      physical_state:
+        liquid: 'Liquid'
+        solid: 'Solid'
+    item_reagent:
+      conservation:
+        bad: 'Bad'
+        medium: 'Medium'
+        good: 'Good'

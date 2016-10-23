@@ -3,6 +3,7 @@ en:
     categories:
       utensil: "Utensil"
       glassware: "Glassware"
+      reagent: 'Reagent'
       standard_solution: "Standard Solution"
     edit:
       title: "%{category} - CODE %{id}"
@@ -14,3 +15,7 @@ en:
     show:
       title: "%{category} - CODE %{id}"
       current_quantity: "Current quantity"
+      shelf_life: 'Shelf Life'
+      current_volume: 'Current Volume'
+      current_weight: 'Current Weight'
+      conservation: 'Conservation'
