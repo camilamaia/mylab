@@ -1,0 +1,48 @@
+p#notice = notice
+
+.page-header
+  h3 = t("material_category.show.subtitle", category: t("material_category.categories.#{@reagent.actable_type.underscore}"))
+
+.col-md-6
+  .table-responsive
+    table.table.table-striped.table-show
+      thead
+        tr
+          th
+          th = @reagent.name
+      tbody
+        tr
+          td.col-md-4 = t("material_category.show.physical_state")
+          td.col-md-8 = t("enumerize.reagent.physical_state.#{@reagent.physical_state}")
+        tr
+          td.col-md-4 = t("material_category.show.ufsc_code")
+          td.col-md-8= @reagent.ufsc_id
+        tr
+          td.col-md-4 = t("material_category.show.cas")
+          td.col-md-8 = @reagent.cas
+        tr
+          td.col-md-4 = t("material_category.show.purity")
+          td.col-md-8 = @reagent.purity
+        tr
+          td.col-md-4 = t("material_category.show.synonym")
+          td.col-md-8 = @reagent.synonym
+        tr
+          td.col-md-4 = t("material_category.show.brand")
+          td.col-md-8 = @reagent.brand
+
+        - if @reagent.physical_state.liquid?
+          tr
+            td.col-md-4 = t("material_category.show.volume")
+            td.col-md-8 = @reagent.volume
+
+        - if @reagent.physical_state.solid?
+          tr
+            td.col-md-4 = t("material_category.show.weight")
+            td.col-md-8 = @reagent.weight
+          tr
+            td.col-md-4 = t("material_category.show.form")
+            td.col-md-8 = t("enumerize.reagent.form.#{@reagent.form}")
+
+.col-md-12
+  = link_to t(:back), :materials, {:class=>"btn btn-default"}
+  = link_to t(:edit), edit_reagent_path(@reagent), {:class=>"btn btn-default"}

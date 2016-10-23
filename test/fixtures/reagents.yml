@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  physical_state: MyString
+  ufsc_id: 1
+  cas: MyString
+  purity: MyString
+  synonym: MyString
+  brand: MyString
+  volume: MyString
+  weight: MyString
+  form: MyString
+
+two:
+  physical_state: MyString
+  ufsc_id: 1
+  cas: MyString
+  purity: MyString
+  synonym: MyString
+  brand: MyString
+  volume: MyString
+  weight: MyString
+  form: MyString

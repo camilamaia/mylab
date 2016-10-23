@@ -1,0 +1,37 @@
+h1 Listing reagents
+
+table
+  thead
+    tr
+      th Physical state
+      th Ufsc
+      th Cas
+      th Purity
+      th Synonym
+      th Brand
+      th Volume
+      th Weight
+      th Form
+      th
+      th
+      th
+
+  tbody
+    - @reagents.each do |reagent|
+      tr
+        td = reagent.physical_state
+        td = reagent.ufsc_id
+        td = reagent.cas
+        td = reagent.purity
+        td = reagent.synonym
+        td = reagent.brand
+        td = reagent.volume
+        td = reagent.weight
+        td = reagent.form
+        td = link_to 'Show', reagent
+        td = link_to 'Edit', edit_reagent_path(reagent)
+        td = link_to 'Destroy', reagent, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Reagent', new_reagent_path

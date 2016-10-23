@@ -19,6 +19,14 @@
               span = t("material.index.glassware")
           li.divider[role="separator"]
           li.text-right
+            = link_to new_reagent_path reagent: { physical_state: :solid }
+              span = t("material.index.solid_reagent")
+          li.divider[role="separator"]
+          li.text-right
+            = link_to new_reagent_path reagent: { physical_state: :liquid }
+              span = t("material.index.liquid_reagent")
+          li.divider[role="separator"]
+          li.text-right
             = link_to new_standard_solution_path
               span = t("material.index.standard_solution")
 

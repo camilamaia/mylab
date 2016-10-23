@@ -22,5 +22,16 @@ en:
         capacity: 'Capacity'
         concentration: 'Concentration'
         shelf_life: 'Shelf Life'
+        format: 'Form'
+        weight: 'Weight'
+        volume: 'Volume'
+        purity: 'Purity'
+        brand: 'Brand'
+        synonym: 'Synonym'
+        cas: 'CAS'
+        physical_state: 'Physical State'
+        current_volume: 'Current Volume'
+        current_weight: 'Current Weight'
+        conservation: 'Conservation'
     helpers:
       submit: "Save"

@@ -1,9 +1,10 @@
 en:
   material_category:
     categories:
-      utensil: "Utensil"
-      glassware: "Glassware"
-      standard_solution: "Standard Solution"
+      utensil: 'Utensil'
+      glassware: 'Glassware'
+      standard_solution: 'Standard Solution'
+      reagent: 'Reagent'
     edit:
       title: "%{category}"
       destroy: "Destroy %{category}"
@@ -13,8 +14,17 @@ en:
       title: "Add %{category}"
     show:
       subtitle: "%{category}"
-      name: "Name"
-      ufsc_code: "UFSC Code"
-      quantity: "Quantity"
-      capacity: "Capacity"
-      concentration: "Concentration"
+      name: 'Name'
+      ufsc_code: 'UFSC Code'
+      quantity: 'Quantity'
+      capacity: 'Capacity'
+      concentration: 'Concentration'
+      shelf_life: 'Shelf Life'
+      format: 'Form'
+      weight: 'Weight'
+      volume: 'Volume'
+      purity: 'Purity'
+      brand: 'Brand'
+      synonym: 'Synonym'
+      cas: 'CAS'
+      physical_state: 'Physical State'

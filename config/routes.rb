@@ -1,4 +1,6 @@
 Mylab::Application.routes.draw do
+  resources :item_reagents
+  resources :reagents
   resources :item_standard_solutions
   resources :standard_solutions
   devise_for :users

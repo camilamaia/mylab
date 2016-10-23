@@ -24,16 +24,28 @@ class Material < ActiveRecord::Base
     when 'quantity'
       "#{value} un, "
     when 'capacity'
-      "capacidade #{value}, "
+      "capacidade: #{value}, "
     when 'concentration'
-      "concentração #{value}, "
+      "concentração: #{value}, "
+    when 'purity'
+      "pureza: #{value}, "
+    when 'brand'
+      "marca: #{value}, "
+    when 'synonym'
+      "sinônimo: #{value}, "
+    when 'form'
+      "#{I18n.t("enumerize.reagent.form.#{value}")}, "
+    when 'physical_state'
+      "#{I18n.t("enumerize.reagent.physical_state.#{value}")}, "
+    when 'weight', 'volume'
+      "#{value}, "
     else
       "#{name} #{value}, "
     end
   end
 
   def name_with_description
-     "#{name}, #{description}"
+    "#{self.name}, #{self.description}"
   end
 
   def route_path
@@ -43,4 +55,5 @@ class Material < ActiveRecord::Base
   def edit_path
     "edit_#{route_path}"
   end
+
 end

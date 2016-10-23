@@ -28,15 +28,21 @@ class Item < ActiveRecord::Base
   def attr_friendly_description name, value
     case name
     when 'current_quantity'
-      "quantidade atual #{value} un, "
+      "quantidade atual: #{value} un, "
+    when 'current_volume'
+      "volume atual: #{value}, "
+    when 'current_weight'
+      "peso atual: #{value}, "
+    when 'conservation'
+      "estado de conservação: #{I18n.t("enumerize.item_reagent.conservation.#{value}")}, "
     when 'shelf_life(3i)'
-      "validade #{value}/"
+      "validade: #{value}/"
     when 'shelf_life(2i)'
       "#{value}/"
     when 'shelf_life(1i)'
       "#{value}, "
     else
-      "#{name} #{value}, "
+      "#{name}: #{value}, "
     end
   end
 

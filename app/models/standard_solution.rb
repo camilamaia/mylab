@@ -7,8 +7,10 @@ class StandardSolution < ActiveRecord::Base
 
   def concentration_unit
     if self.concentration
-      unless Unit.new(self.concentration).compatible?('mg/l')
-        errors.add(:concentration, 'Deve ser uma unidade de concentração. Ex: 100mg/L')
+      begin
+        Unit.new(self.concentration).convert_to('mg/l')
+      rescue
+        errors.add(:concentration, 'deve ser uma unidade de concentração. Ex: 100mg/L')
       end
     end
   end

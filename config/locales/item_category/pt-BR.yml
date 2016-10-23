@@ -1,9 +1,10 @@
 pt-BR:
   item_category:
     categories:
-      utensil: "Utensílio"
-      glassware: "Vidraria"
-      standard_solution: "Padrão"
+      utensil: 'Utensílio'
+      glassware: 'Vidraria'
+      reagent: 'Reagente'
+      standard_solution: 'Padrão'
     edit:
       title: "%{category} - COD %{id}"
       remove: "Remover %{category}"
@@ -13,4 +14,8 @@ pt-BR:
       title: "Adicionar %{category}"
     show:
       title: "%{category} - COD %{id}"
-      current_quantity: "Quantidade atual"
+      current_quantity: 'Quantidade atual'
+      shelf_life: 'Validade'
+      current_volume: 'Volume atual'
+      current_weight: 'Peso atual'
+      conservation: 'Estado de conservação'

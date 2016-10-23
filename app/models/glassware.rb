@@ -8,7 +8,9 @@ class Glassware < ActiveRecord::Base
 
   def capacity_unit
     if self.capacity && !self.capacity.blank?
-      unless Unit.new(self.capacity).compatible?('ml')
+      begin
+        Unit.new(self.capacity).convert_to('ml')
+      rescue
         errors.add(:capacity, 'capacidade deve ser uma unidade de volume. Ex: 100mL, 100L')
       end
     end

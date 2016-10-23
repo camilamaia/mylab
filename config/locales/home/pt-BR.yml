@@ -7,7 +7,7 @@ pt-BR:
       alerts: "Alertas"
       materials_catalog: "Catálogo de Materiais"
       add_description: "Adicionar descrição"
-      responsible: "Responsável %{responsible}"
+      responsible: "Responsável: %{responsible}"
       access: "Acessar"
       no_stocks: "Não há estoques cadastrados"
       no_labs: "Ops! Não há laboratórios cadastrados ainda. Peça a um colega para que o adicione em um de seus laboratórios, ou crie o seu aqui!"

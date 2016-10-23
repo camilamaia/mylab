@@ -1,9 +1,10 @@
 pt-BR:
   material_category:
     categories:
-      utensil: "Utensílio"
-      glassware: "Vidraria"
-      standard_solution: "Padrão"
+      utensil: 'Utensílio'
+      glassware: 'Vidraria'
+      standard_solution: 'Padrão'
+      reagent: 'Reagente'
     edit:
       title: "%{category}"
       destroy: "Excluir %{category}"
@@ -13,8 +14,16 @@ pt-BR:
       title: "Adicionar %{category}"
     show:
       subtitle: "%{category}"
-      name: "Nome"
-      ufsc_code: "Código UFSC"
-      quantity: "Quantidade"
-      capacity: "Capacidade"
-      concentration: "Concentração"
+      name: 'Nome'
+      ufsc_code: 'Código UFSC'
+      quantity: 'Quantidade'
+      capacity: 'Capacidade'
+      concentration: 'Concentração'
+      form: 'Formato'
+      weight: 'Peso'
+      volume: 'Volume'
+      purity: 'Grau de pureza'
+      brand: 'Marca'
+      synonym: 'Sinônimo'
+      cas: 'CAS'
+      physical_state: 'Estado Físico'
