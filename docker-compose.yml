@@ -1,0 +1,28 @@
+version: '2'
+services:
+  postgres:
+    image: postgres
+    volumes: #define the volume that the container will share with the hostmachine
+      -  postgresql_data:/var/lib/postgresql/data
+    hostname: postgres 
+    environment:
+      - "PRODUCTION_PASSWORD=postgres"
+      - "PRODUCTION_USERNAME=postgres"
+      - "PRODUCTION_DATABASE=mylab_production"
+ #   restart: always
+###    ports:
+#      - "15432:5432"
+  rails:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0' -e production
+    links:
+      - postgres
+    environment:
+      - "RAILS_ENV=production"
+      - "DOMAIN=ufsc.br"
+      - "HOSTNAME=mylab.ufsc.br"
+    ports:
+      - "80:3000"
+volumes:
+  postgresql_data:
+# restart: always
