@@ -95,40 +95,40 @@ $ uname -r
 
 Docker’s APT repository contains Docker 1.7.1 and higher. To set APT to use from the new repository:
 
-1. Update package information, ensure that APT works with the https method, and that CA certificates are installed
+Update package information, ensure that APT works with the https method, and that CA certificates are installed
 
- ``` 
- $ apt-get update
- $ apt-get install apt-transport-https ca-certificates
- ```
+``` 
+$ apt-get update
+$ apt-get install apt-transport-https ca-certificates
+```
 
-2. Add the new GPG key
+Add the new GPG key
 
- ```
- $ apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
- ```
+```
+$ apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+```
 
-3. Open the */etc/apt/sources.list.d/docker.list* file (if the file doesn’t exist, create it).
+Open the */etc/apt/sources.list.d/docker.list* file (if the file doesn’t exist, create it).
 
-4. Remove any existing entries
+Remove any existing entries
 
-5. Add an entry for your Debian operating system. The possible entries are (On Debian Stretch/Sid):
+Add an entry for your Debian operating system. The possible entries are (On Debian Stretch/Sid):
 
- ```
- deb https://apt.dockerproject.org/repo debian-stretch main
- ```
+```
+deb https://apt.dockerproject.org/repo debian-stretch main
+```
 
-6. Update apt-get
+Update apt-get
 
- ```
- $ apt-get update
- ```
+```
+$ apt-get update
+```
 
-7. Verify that APT is pulling from the right repository
+Verify that APT is pulling from the right repository
 
- ```
- $ apt-cache policy docker-engine
- ```
+```
+$ apt-cache policy docker-engine
+```
 
 From now on when you run apt-get upgrade, APT pulls from the new apt repository.
 
@@ -137,25 +137,25 @@ From now on when you run apt-get upgrade, APT pulls from the new apt repository.
 Before installing Docker, make sure you have set your APT repository correctly as described in the prerequisites.
 
 Update the APT package index.
- ```
+```
  $ sudo apt-get update
- ```
+```
 
 Install Docker.
- ```
- $ sudo apt-get install docker-engine
- ```
+```
+$ sudo apt-get install docker-engine
+```
 
 Start the docker daemon.
- ```
+```
  $ sudo service docker start
- ```
+```
 
 
 Verify docker is installed correctly.
- ```
+```
  $ sudo docker run hello-world
- ```
+```
 This command downloads a test image and runs it in a container. When the container runs, it prints an informational message. Then, it exits.
 
 ### Give non-root access
