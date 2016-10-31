@@ -75,6 +75,9 @@ group :development do
 
   # https://github.com/rweng/pry-rails
   gem 'pry-rails', '~> 0.3.4'
+
+  # https://github.com/voormedia/rails-erd
+  gem 'rails-erd', '~> 1.5.0'
 end
 
 group :production do

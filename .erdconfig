@@ -1,0 +1,23 @@
+attributes:
+  - content
+  - foreign_key
+  - primary_keys
+  - inheritance
+  - timestamps
+disconnected: true
+filename: Modelagem ER
+filetype: pdf
+indirect: true
+inheritance: true
+markup: true
+notation: bachman
+orientation: vertical
+polymorphism: false
+sort: true
+warn: true
+title: Modelagem Entidade Relacionamento
+exclude: null
+only: Material, Reagent, Glassware, StandardSolution, Utensil, Item, ItemReagent, ItemGlassware, ItemStandardSolution, ItemUtensil
+only_recursion_depth: null
+prepend_primary: false
+cluster: false
