@@ -251,7 +251,11 @@ services:
       - "PRODUCTION_DATABASE=mylab_production"
  #   restart: always #in case the database dies
 ###    ports:
-#      - "15432:5432" # links the 5432 port of the host on the 5432 port of the container #to make database accessible from the host machine. It can be commented because #the container already exposes the 5432 port automatically which is specified on the #Dockerfile of the official postgres image and we don’t need an exposed port on the #host machine for the database
+#      - "15432:5432" # links the 5432 port of the host on the 5432 port of the container
+#to make database accessible from the host machine. It can be commented because 
+#the container already exposes the 5432 port automatically which is specified on the 
+#Dockerfile of the official postgres image and we don’t need an exposed port on the
+#host machine for the database
   rails: #rails service description
     build: . # this means that the build is refered in a Dockerfile in the current directory
 that’s why we don’t need to set a image here, the Dockerfile already have a rails image
