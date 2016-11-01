@@ -404,6 +404,113 @@ And, check the changes on the browser
 http://mylab.ufsc.br
 ```
 
+## Add New Category
 
+### Create new category
 
+Generate the scaffold (Don’t need to add name and description - they are already on Material model)
+```
+$ cd mylab
+$ rails generate scaffold <CategoryName> attribute1:type1 attribute2:type2 --no-timestamps
+```
 
+example:
+
+```
+$ rails generate scaffold Glassware ufsc_id:integer capacity:string quantity:integer --no-timestamps
+```
+
+Migrate the database
+
+```
+rake db:migrate
+```
+
+Edit model file app/models/\<category_name\>.rb. Copy from app/models/glassware.rb and change the validations and the class declaration properly
+
+Edit controller file app/controllers/\<category_name\>\_controller.rb. Copy from app/controllers/glassware_controllers.rb. Edit the variable names properly according the category name. Update the permit params with name, description and the others attributes of the category.
+
+Edit description. Edit app/models/material.rb file, method attr_friendly_description - update if a new attribut added
+
+Edit view files and delete the useless too
+```
+app/views/<category_name>/_form.html.slim
+  Copy from app/views/glasswares/_form.html.slim
+  Change the variable names and fields
+app/views/<category_name>/edit.html.slim
+  Copy from app/views/glasswares/edit.html.slim
+  Change the variable names
+app/views/<category_name>/new.html.slim
+  Copy from app/views/glasswares/new.html.slim
+  Change the variable names
+app/views/<category_name>/show.html.slim (edit fields too)
+  Copy from app/views/glasswares>/show.html.slim
+  Change the variable names and fields
+```
+
+Add category on materials view dropdown: app/views/materials/index.html.slim
+
+Add new locales for the new category and new fields
+```
+config/locales/material/en.yml
+config/locales/material/pt-BR.yml
+config/locales/material_category/en.yml
+config/locales/material_category/pt-BR.yml
+config/locales/simple_form.pt-BR.yml
+config/locales/simple_form.en.yml
+```
+
+### Create new category item
+
+Create item category scaffold
+
+```
+$ cd mylab
+$ rails generate scaffold Item<CategoryName> attribute1:type1 attribute2:type2 --no-timestamps
+```
+
+example:
+
+```
+$ rails generate scaffold ItemGlassware current_quantity:string --no-timestamps
+```
+
+Migrate the database
+
+```
+rake db:migrate
+```
+
+Edit model file app/models/item\_\<category_name\>.rb. Copy from app/models/item_glassware.rb and change the validations and the class declaration properly
+
+Edit controller file app/controllers/item\_\<category_name\>\_controller.rb. Copy from app/controllers/item_glassware_controllers.rb. Edit the variable names properly according the category name. Update the permit params with :material_id, :name and the others attributes of the category.
+
+Edit description. Edit app/models/item.rb file, method attr_friendly_description - update if a new attribut added
+
+Edit views file and delete the useless too.
+```
+* app/views/item_<category_name>/_form.html.slim
+  Copy from app/views/item_glasswares/_form.html.slim
+  Change the variable names and fields
+* app/views/item_<category_name>/edit.html.slim
+  Copy from app/views/item_glasswares/edit.html.slim
+  Change the variable names
+* app/views/item_<category_name>/new.html.slim
+  Copy from app/views/item_glasswares/new.html.slim
+  Change the variable names
+* app/views/item_<category_name>/show.html.slim (edit fields too)
+  Copy from app/views/item_glasswares>/show.html.slim
+  Change the variable names and fields
+```
+
+Add item category on items view dropdown: app/views/items/index.html.slim
+
+Add new locales for the new category and new fields
+```
+config/locales/item/en.yml
+config/locales/item/pt-BR.yml
+config/locales/item_category/en.yml
+config/locales/item_category/pt-BR
+config/locales/simple_form.pt-BR.yml
+config/locales/simple_form.en.yml
+```
